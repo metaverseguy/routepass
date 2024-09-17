@@ -1,7 +1,7 @@
-import React from "react";
-import Navbar from "./component/Navbar";
-import Header from "./component/Header";
-import "./App.css";
+import React from 'react';
+import Navbar from './component/Navbar';
+import Header from './component/Header';
+import './App.css';
 
 function App() {
   return (
