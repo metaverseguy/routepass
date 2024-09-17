@@ -13,7 +13,7 @@ export const LandingCarousel = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="mt-40">
       <Slider {...settings}>
         <div className="ml-20">
           <div

@@ -1,37 +1,44 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BiSearch } from 'react-icons/bi';
+import { IoIosSearch } from 'react-icons/io';
 
-const SearchBar = () => {
+export default function searchFunc() {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('economy');
   const [filterItem, setFilterItem] = useState('recommended');
   return (
-    <div className="relative top-[112px] z-10 flex flex-col items-center justify-center text-black text-center gap-20 w-full tablet:w-4/5">
-      <div className="flex justify-center">
-        <h1 className="text-[36px] md:text-[56px] text-center font-bold mb-2 text-white w-full tablet:w-3/5">
-          Get exclusive flight offers wherever your journey takes you
-        </h1>
-      </div>
-
-      <div className="bg-white rounded-lg p-6 shadow-lg">
-        <div className="flex justify-between mb-5">
+    <div className="bg-[#2B2B2B] p-6 shadow-lg flex justify-center">
+      <div className="w-[90%] flex flex-col">
+        <div className="flex justify-center p-6 bg-[#1E1E1E]">
+          <div className="flex items-center justify-center text-white rounded-lg w-4/5 whitespace-nowrap gap-1">
+            <IoIosSearch />
+            <span>Bali, (Denpasar) (DPS) - London Gatwick (LGW)</span>
+            <span className="mx-1">•</span>
+            <span>Mon, 05 Jun - Wed, 07 Jun</span>
+            <span className="mx-1">•</span>
+            <span>1 Children, 1 Adult</span>
+            <span className="mx-1">•</span>
+            <span>Business</span>
+          </div>
+        </div>
+        <div className="flex justify-between m-5">
           <div className="gap-4 flex">
             <div>
               <input type="radio" id="return" name="trip" value="return" defaultChecked />
-              <label htmlFor="return" className="ml-2">
+              <label htmlFor="return" className="ml-2 text-[#FFFFFF80]">
                 Return
               </label>
             </div>
             <div>
               <input type="radio" id="one-way" name="trip" value="one-way" />
-              <label htmlFor="one-way" className="ml-2">
+              <label htmlFor="one-way" className="ml-2 text-[#FFFFFF80]">
                 One Way
               </label>
             </div>
             <div>
               <input type="radio" id="multi-city" name="trip" value="multi-city" />
-              <label htmlFor="multi-city" className="ml-2">
+              <label htmlFor="multi-city" className="ml-2 text-[#FFFFFF80]">
                 Multi-City
               </label>
             </div>
@@ -67,25 +74,25 @@ const SearchBar = () => {
         </div>
 
         <div className="flex gap-[5px] mb-5">
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
+          <div className="border-black p-5 bg-gray-100 rounded-[7px] w-full">
             <p className="text-xs text-left text-[#29292950]">From</p>
             <input
               type="text"
               placeholder="From"
-              className="text-xs bg-gray-100 text-[#292929]"
+              className="text-xs bg-gray-100 text-[#292929] w-full"
               defaultValue="Bali, (Denpasar) (DPS)"
             />
           </div>
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
+          <div className="border-black p-5 bg-gray-100 rounded-[7px] w-full">
             <p className="text-xs text-left text-[#29292950]">To</p>
-            <div className="flex">
+            <div>
               <input
                 type="text"
-                placeholder="From"
-                className="text-xs bg-gray-100 text-[#292929]"
+                placeholder="To"
+                className="text-xs bg-gray-100 text-[#292929] w-full"
                 defaultValue="London Gatwick (LGW)"
               />
-              <div className="absolute items-center justify-center -ml-10 -my-2">
+              <div className="absolute items-center justify-center -ml-10 -my-8">
                 <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center">
                   <svg
                     width="17"
@@ -102,31 +109,31 @@ const SearchBar = () => {
               </div>
             </div>
           </div>
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
+          <div className="border-black p-5 bg-gray-100 rounded-[7px] w-full">
             <p className="text-xs text-left text-[#29292950]">Depart</p>
             <input
               type="text"
-              placeholder="From"
-              className="text-xs bg-gray-100 text-[#292929]"
+              placeholder="Depart Date"
+              className="text-xs bg-gray-100 text-[#292929] w-full"
               defaultValue="05/06/2024"
             />
           </div>
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
+          <div className="border-black p-5 bg-gray-100 rounded-[7px] w-full">
             <p className="text-xs text-left text-[#29292950]">Return</p>
             <input
               type="text"
-              placeholder="From"
-              className="text-xs bg-gray-100 text-[#292929]"
+              placeholder="Return Date"
+              className="text-xs bg-gray-100 text-[#292929] w-full"
               defaultValue="07/06/2024"
             />
           </div>
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
+          <div className="border-black p-5 bg-gray-100 rounded-[7px] w-full">
             <p className="text-xs text-left text-[#29292950]">Travellers</p>
             <input
               type="text"
-              placeholder="From"
-              className="text-xs bg-gray-100 text-[#292929]"
-              defaultValue="1Children, 1Adult"
+              placeholder="Travellers"
+              className="text-xs bg-gray-100 text-[#292929] w-full"
+              defaultValue="1 Children, 1 Adult"
             />
           </div>
           <button
@@ -136,47 +143,47 @@ const SearchBar = () => {
           </button>
         </div>
 
-        <div className="flex gap-[15px]">
+        <div className="flex gap-[20px] text-sm">
           <p className="text-[#9f9f9f] text-xs">Popular Filters:</p>
           <div className="flex gap-[15px]">
             <button
               className={`text-xs rounded ${
-                filterItem === 'recommended' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+                filterItem === 'recommended' ? 'text-[#ffffff] underline' : 'text-[#FFFFFF80]'
               }`}
               onClick={() => setFilterItem('recommended')}>
               Recommended
             </button>
             <button
               className={`text-xs rounded ${
-                filterItem === 'affordable' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+                filterItem === 'affordable' ? 'text-[#2B2B2B] underline' : 'text-[#FFFFFF80]'
               }`}
               onClick={() => setFilterItem('affordable')}>
               Most Affordable
             </button>
             <button
               className={`text-xs rounded ${
-                filterItem === 'bestreview' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+                filterItem === 'bestreview' ? 'text-[#2B2B2B] underline' : 'text-[#FFFFFF80]'
               }`}
               onClick={() => setFilterItem('bestreview')}>
               Best Review
             </button>
             <button
               className={`text-xs rounded ${
-                filterItem === 'nonstopflight' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+                filterItem === 'nonstopflight' ? 'text-[#2B2B2B] underline' : 'text-[#FFFFFF80]'
               }`}
               onClick={() => setFilterItem('nonstopflight')}>
               Non-Stop Flights
             </button>
             <button
               className={`text-xs rounded ${
-                filterItem === 'shortestduration' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+                filterItem === 'shortestduration' ? 'text-[#2B2B2B] underline' : 'text-[#FFFFFF80]'
               }`}
               onClick={() => setFilterItem('shortestduration')}>
               Shortest Duration
             </button>
             <button
               className={`text-xs rounded ${
-                filterItem === 'flexibledate' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+                filterItem === 'flexibledate' ? 'text-[#2B2B2B] underline' : 'text-[#FFFFFF80]'
               }`}
               onClick={() => setFilterItem('flexibledate')}>
               Flexible Dates
@@ -186,6 +193,4 @@ const SearchBar = () => {
       </div>
     </div>
   );
-};
-
-export default SearchBar;
+}

@@ -4,13 +4,14 @@ import { TfiAlignJustify } from 'react-icons/tfi';
 import { GoTriangleDown } from 'react-icons/go';
 import { RiGlobalFill } from 'react-icons/ri';
 import { BiSolidPlaneAlt } from 'react-icons/bi';
+import { IoChevronDownOutline } from 'react-icons/io5';
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState('flights');
   return (
     <>
       <NotificationBanner />
-      <nav className="bg-[#1E1E1E] text-white flex items-center justify-between p-4">
+      <nav className="bg-[#1E1E1E] text-white flex items-center justify-between p-4 w-full">
         <div className="flex items-center gap-1">
           <svg
             width="23"
@@ -23,21 +24,24 @@ const Navbar = () => {
               fill="white"
             />
           </svg>
-          <span className="text-[26px] font-bold">RoutePass</span>
+          <a href="/" className="text-[26px] font-bold">
+            RoutePass
+          </a>
         </div>
-        <div className="flex gap-2">
+        <div className="flex">
           <button
             className={`px-4 py-2 rounded-full ${
               activeTab === 'flights' ? 'bg-gray-800 text-white' : 'text-gray-400'
             }`}
             onClick={() => setActiveTab('flights')}>
-            <span className="flex items-center">
+            <span className="flex items-center gap-2">
               <BiSolidPlaneAlt />
               Flights
+              <IoChevronDownOutline className="block mobile:hidden" />
             </span>
           </button>
           <button
-            className={`px-4 py-2 rounded-full ${
+            className={`px-4 py-2 hidden mobile:block rounded-full ${
               activeTab === 'hotels' ? 'bg-gray-800 text-white' : 'text-gray-400'
             }`}
             onClick={() => setActiveTab('hotels')}>
@@ -45,19 +49,17 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex gap-6 text-sm items-center">
-          <div className="relative">
+          <div className="relative hidden tablet:block">
             <button className="flex items-center">
               <RiGlobalFill color="white" />
               <span>English</span>
               <GoTriangleDown />
             </button>
           </div>
-          <a href="/" className="hover:text-gray-400">
-            Bookmark
-          </a>
-          <button className="flex items-center">
+          <div className="hover:text-gray-400 hidden tablet:block">Bookmark</div>
+          <div className="items-center mobile:block hidden">
             <img src="path/to/profile-pic.jpg" alt="Profile" className="w-8 h-8 rounded-full" />
-          </button>
+          </div>
           <button className="text-gray-400 hover:text-white">
             <TfiAlignJustify />
           </button>
