@@ -7,6 +7,7 @@ import { Guide } from './component/Guide';
 import { FlightDeals } from './component/FlightDeals';
 import { Travllers } from './component/Travellers';
 import { Subscribe } from './component/Subscribe';
+import { Questions } from './component/Questions';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <FlightDeals />
       <Travllers />
       <Subscribe />
+      <Questions />
     </div>
   );
 }
