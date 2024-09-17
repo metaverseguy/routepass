@@ -8,6 +8,7 @@ import { FlightDeals } from './component/FlightDeals';
 import { Travllers } from './component/Travellers';
 import { Subscribe } from './component/Subscribe';
 import { Questions } from './component/Questions';
+import { Footer } from './component/Footer';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Travllers />
       <Subscribe />
       <Questions />
+      <Footer />
     </div>
   );
 }
