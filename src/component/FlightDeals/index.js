@@ -1,347 +1,116 @@
-import { EmirateSVG } from '../SVGs/Emirate';
+import { DealCard } from './DealCard';
 
 export const FlightDeals = () => {
   return (
-    <div className="p-14 gap-[60px] text-[#292929]">
-      <div className="px-80 mb-12">
-        <p className="text-[44px]">Best Flight Deals</p>
-        <p className="text-[18x]">
+    <div className="flex flex-col items-center justify-center p-14 px-5 sm:px-14 md:px-16 text-[#292929]">
+      <div className="text-center max-w-[675px]">
+        <p className="text-[28px] sm:text-[44px]">Best Flight Deals</p>
+        <p className="text-[14px] sm:text-[18x]">
           Get unbeatable prices on flights to your favorite destinations. Our curated deals ensure
           you save money while enjoying top-tier travel experiences
         </p>
       </div>
-      <div className="flex gap-4 mb-10">
-        <div className="relative rounded-2xl overflow-hidden border basis-1/4">
-          <img src="assets/img/berlin.jpg" alt="Berlin" className="w-full object-cover" />
-          <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
-            <p className="p-0 m-[0] top-[-8px] absolute">+</p>
-          </button>
-          <div className="px-5 py-7 flex flex-col gap-y-4">
-            <div className="flex justify-between">
-              <div className="order-first">
-                <p className="text-left text-lg font-bold">Berlin</p>
-                <p className="text-left text-sm">Germany</p>
-              </div>
-              <div className="order-last self-center">
-                <p className="text-lg font-bold">$250</p>
-              </div>
+      <div className="flex flex-col gap-8 py-[60px]">
+        <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
+              <DealCard
+                city="Florence"
+                country="Italy"
+                price="$250"
+                startDate="Wed, 23 Sep"
+                endDate="Wed, 30 Sep"
+                airInfo="LTN - TIA with Emirates Air UK"
+                imgURL="assets/img/florence.png"
+              />
             </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
+            <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
+              <DealCard
+                city="Bali"
+                country="Indonesia"
+                price="$250"
+                startDate="Wed, 23 Sep"
+                endDate="Wed, 30 Sep"
+                airInfo="LTN - TIA with Emirates Air UK"
+                imgURL="assets/img/bali.png"
+              />
             </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
+              <DealCard
+                city="Tokyo"
+                country="Japan"
+                price="$250"
+                startDate="Wed, 23 Sep"
+                endDate="Wed, 30 Sep"
+                airInfo="LTN - TIA with Emirates Air UK"
+                imgURL="assets/img/tokyo.png"
+              />
+            </div>
+            <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
+              <DealCard
+                city="Rio De Janeiro"
+                country="Brazil"
+                price="$250"
+                startDate="Wed, 23 Sep"
+                endDate="Wed, 30 Sep"
+                airInfo="LTN - TIA with Emirates Air UK"
+                imgURL="assets/img/riodejaneiro.png"
+              />
             </div>
           </div>
         </div>
-        <div className="relative rounded-2xl overflow-hidden border basis-1/4">
-          <img src="assets/img/berlin.jpg" alt="Berlin" className="w-full object-cover" />
-          <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
-            <p className="p-0 m-[0] top-[-8px] absolute">+</p>
-          </button>
-          <div className="px-5 py-7 flex flex-col gap-y-4">
-            <div className="flex justify-between">
-              <div className="order-first">
-                <p className="text-left text-lg font-bold">Berlin</p>
-                <p className="text-left text-sm">Germany</p>
-              </div>
-              <div className="order-last self-center">
-                <p className="text-lg font-bold">$250</p>
-              </div>
+        <div className="hidden lg:block">
+          <div className="flex gap-4">
+            <div className="relative rounded-2xl overflow-hidden border basis-1/4">
+              <DealCard
+                city="Paris"
+                country="France"
+                price="$250"
+                startDate="Wed, 23 Sep"
+                endDate="Wed, 30 Sep"
+                airInfo="LTN - TIA with Emirates Air UK"
+                imgURL="assets/img/paris.png"
+              />
             </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
+            <div className="relative rounded-2xl overflow-hidden border basis-1/4">
+              <DealCard
+                city="Berlin"
+                country="Germany"
+                price="$250"
+                startDate="Wed, 23 Sep"
+                endDate="Wed, 30 Sep"
+                airInfo="LTN - TIA with Emirates Air UK"
+                imgURL="assets/img/berlin.png"
+              />
             </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
+            <div className="relative rounded-2xl overflow-hidden border basis-1/4">
+              <DealCard
+                city="Vancouver"
+                country="Canada"
+                price="$250"
+                startDate="Wed, 23 Sep"
+                endDate="Wed, 30 Sep"
+                airInfo="LTN - TIA with Emirates Air UK"
+                imgURL="assets/img/vancouver.png"
+              />
             </div>
-          </div>
-        </div>
-        <div className="relative rounded-2xl overflow-hidden border basis-1/4">
-          <img src="assets/img/berlin.jpg" alt="Berlin" className="w-full object-cover" />
-          <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
-            <p className="p-0 m-[0] top-[-8px] absolute">+</p>
-          </button>
-          <div className="px-5 py-7 flex flex-col gap-y-4">
-            <div className="flex justify-between">
-              <div className="order-first">
-                <p className="text-left text-lg font-bold">Berlin</p>
-                <p className="text-left text-sm">Germany</p>
-              </div>
-              <div className="order-last self-center">
-                <p className="text-lg font-bold">$250</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-          </div>
-        </div>
-        <div className="relative rounded-2xl overflow-hidden border basis-1/4">
-          <img src="assets/img/berlin.jpg" alt="Berlin" className="w-full object-cover" />
-          <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
-            <p className="p-0 m-[0] top-[-8px] absolute">+</p>
-          </button>
-          <div className="px-5 py-7 flex flex-col gap-y-4">
-            <div className="flex justify-between">
-              <div className="order-first">
-                <p className="text-left text-lg font-bold">Berlin</p>
-                <p className="text-left text-sm">Germany</p>
-              </div>
-              <div className="order-last self-center">
-                <p className="text-lg font-bold">$250</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
+            <div className="relative rounded-2xl overflow-hidden border basis-1/4">
+              <DealCard
+                city="London"
+                country="England, UK"
+                price="$250"
+                startDate="Wed, 23 Sep"
+                endDate="Wed, 30 Sep"
+                airInfo="LTN - TIA with Emirates Air UK"
+                imgURL="assets/img/london.png"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div className="flex gap-4">
-        <div className="relative rounded-2xl overflow-hidden border basis-1/4">
-          <img src="assets/img/berlin.jpg" alt="Berlin" className="w-full object-cover" />
-          <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
-            <p className="p-0 m-[0] top-[-8px] absolute">+</p>
-          </button>
-          <div className="px-5 py-7 flex flex-col gap-y-4">
-            <div className="flex justify-between">
-              <div className="order-first">
-                <p className="text-left text-lg font-bold">Berlin</p>
-                <p className="text-left text-sm">Germany</p>
-              </div>
-              <div className="order-last self-center">
-                <p className="text-lg font-bold">$250</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-          </div>
-        </div>
-        <div className="relative rounded-2xl overflow-hidden border basis-1/4">
-          <img src="assets/img/berlin.jpg" alt="Berlin" className="w-full object-cover" />
-          <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
-            <p className="p-0 m-[0] top-[-8px] absolute">+</p>
-          </button>
-          <div className="px-5 py-7 flex flex-col gap-y-4">
-            <div className="flex justify-between">
-              <div className="order-first">
-                <p className="text-left text-lg font-bold">Berlin</p>
-                <p className="text-left text-sm">Germany</p>
-              </div>
-              <div className="order-last self-center">
-                <p className="text-lg font-bold">$250</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-          </div>
-        </div>
-        <div className="relative rounded-2xl overflow-hidden border basis-1/4">
-          <img src="assets/img/berlin.jpg" alt="Berlin" className="w-full object-cover" />
-          <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
-            <p className="p-0 m-[0] top-[-8px] absolute">+</p>
-          </button>
-          <div className="px-5 py-7 flex flex-col gap-y-4">
-            <div className="flex justify-between">
-              <div className="order-first">
-                <p className="text-left text-lg font-bold">Berlin</p>
-                <p className="text-left text-sm">Germany</p>
-              </div>
-              <div className="order-last self-center">
-                <p className="text-lg font-bold">$250</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-          </div>
-        </div>
-        <div className="relative rounded-2xl overflow-hidden border basis-1/4">
-          <img src="assets/img/berlin.jpg" alt="Berlin" className="w-full object-cover" />
-          <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
-            <p className="p-0 m-[0] top-[-8px] absolute">+</p>
-          </button>
-          <div className="px-5 py-7 flex flex-col gap-y-4">
-            <div className="flex justify-between">
-              <div className="order-first">
-                <p className="text-left text-lg font-bold">Berlin</p>
-                <p className="text-left text-sm">Germany</p>
-              </div>
-              <div className="order-last self-center">
-                <p className="text-lg font-bold">$250</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
-                <EmirateSVG />
-              </div>
-              <div className="px-[10px] flex-grow">
-                <p className="text-xs text-left">Wed, 23 Sep</p>
-                <p className="text-[10px] text-[#979797] text-left">
-                  LTN - TIA with Emirates Air UK
-                </p>
-              </div>
-              <p className="text-right text-[10px] font-bold">Direct</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <button className="px-7 py-4 bg-[#333333] rounded-[10px] text-white">See More</button>
     </div>
   );
 };
