@@ -1,92 +1,134 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BiSearch } from 'react-icons/bi';
+import { Dropdown } from 'primereact/dropdown';
+import 'primereact/resources/themes/lara-light-cyan/theme.css';
 
 const SearchBar = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('economy');
-  const [filterItem, setFilterItem] = useState('recommended');
+  // const [filterItem, setFilterItem] = useState('recommended');
+  const [selectedTravelType, setSelectedTravelType] = useState({ name: 'Return', code: 'rt' });
+  const [selectedTravelPurpose, setSelectedTravelPurpose] = useState({
+    name: 'Economy',
+    code: 'en'
+  });
+
+  const travelType = [
+    { name: 'Return', code: 'rt' },
+    { name: 'One Way', code: 'ow' },
+    { name: 'Multi-City', code: 'mc' }
+  ];
+  const travelPurpose = [
+    { name: 'Economy', code: 'en' },
+    { name: 'Business', code: 'bn' },
+    { name: 'First Class', code: 'fc' }
+  ];
+
   return (
-    <div className="relative top-[112px] z-10 flex flex-col items-center justify-center text-black text-center gap-20 w-full tablet:w-4/5">
-      <div className="flex justify-center">
-        <h1 className="text-[36px] md:text-[56px] text-center font-bold mb-2 text-white w-full tablet:w-3/5">
-          Get exclusive flight offers wherever your journey takes you
-        </h1>
-      </div>
+    <div className="absolute top-0 flex flex-col items-center justify-center text-black text-center gap-20 w-full xl:px-44 xl:py-28 lg:px-12 lg:py-28 px-5 py-20">
+      <p className="text-[36px] lg:text-[56px] text-center font-bold text-white w-full">
+        Get exclusive flight offers wherever your journey takes you
+      </p>
 
-      <div className="bg-white rounded-lg p-6 shadow-lg">
-        <div className="flex justify-between mb-5">
-          <div className="gap-4 flex">
-            <div>
-              <input type="radio" id="return" name="trip" value="return" defaultChecked />
-              <label htmlFor="return" className="ml-2">
-                Return
-              </label>
+      <div className="bg-white rounded-lg shadow-lg flex flex-col p-8 w-full gap-y-[10px]">
+        <div className="hidden md:block">
+          <div className="flex justify-between mb-5">
+            <div className="gap-4 flex justify-center items-center">
+              <div>
+                <input type="radio" id="return" name="trip" value="return" defaultChecked />
+                <label htmlFor="return" className="ml-2">
+                  Return
+                </label>
+              </div>
+              <div>
+                <input type="radio" id="one-way" name="trip" value="one-way" />
+                <label htmlFor="one-way" className="ml-2">
+                  One Way
+                </label>
+              </div>
+              <div>
+                <input type="radio" id="multi-city" name="trip" value="multi-city" />
+                <label htmlFor="multi-city" className="ml-2">
+                  Multi-City
+                </label>
+              </div>
             </div>
-            <div>
-              <input type="radio" id="one-way" name="trip" value="one-way" />
-              <label htmlFor="one-way" className="ml-2">
-                One Way
-              </label>
-            </div>
-            <div>
-              <input type="radio" id="multi-city" name="trip" value="multi-city" />
-              <label htmlFor="multi-city" className="ml-2">
-                Multi-City
-              </label>
-            </div>
-          </div>
 
-          <div className="flex justify-center bg-[#F5F5F5] rounded-[500px]">
-            <button
-              className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
-                activeTab === 'economy' ? 'bg-[#1E1E1E] text-white' : 'bg-[#F5F5F5] text-[#1E1E1E]'
-              }`}
-              onClick={() => setActiveTab('economy')}>
-              Economy
-            </button>
-            <button
-              className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
-                activeTab === 'bussiness'
-                  ? 'bg-[#1E1E1E] text-white'
-                  : 'bg-[#F5F5F5] text-[#1E1E1E]'
-              }`}
-              onClick={() => setActiveTab('bussiness')}>
-              Bussiness
-            </button>
-            <button
-              className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
-                activeTab === 'firstclass'
-                  ? 'bg-[#1E1E1E] text-white'
-                  : 'bg-[#F5F5F5] text-[#1E1E1E]'
-              }`}
-              onClick={() => setActiveTab('firstclass')}>
-              First Class
-            </button>
+            <div className="flex justify-center bg-[#F5F5F5] rounded-[500px]">
+              <button
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
+                  activeTab === 'economy'
+                    ? 'bg-[#1E1E1E] text-white'
+                    : 'bg-[#F5F5F5] text-[#1E1E1E]'
+                }`}
+                onClick={() => setActiveTab('economy')}>
+                Economy
+              </button>
+              <button
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
+                  activeTab === 'bussiness'
+                    ? 'bg-[#1E1E1E] text-white'
+                    : 'bg-[#F5F5F5] text-[#1E1E1E]'
+                }`}
+                onClick={() => setActiveTab('bussiness')}>
+                Bussiness
+              </button>
+              <button
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
+                  activeTab === 'firstclass'
+                    ? 'bg-[#1E1E1E] text-white'
+                    : 'bg-[#F5F5F5] text-[#1E1E1E]'
+                }`}
+                onClick={() => setActiveTab('firstclass')}>
+                First Class
+              </button>
+            </div>
           </div>
         </div>
 
-        <div className="flex gap-[5px] mb-5">
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
-            <p className="text-xs text-left text-[#29292950]">From</p>
-            <input
-              type="text"
-              placeholder="From"
-              className="text-xs bg-gray-100 text-[#292929]"
-              defaultValue="Bali, (Denpasar) (DPS)"
+        <div className="block md:hidden">
+          <div className="card flex justify-content-center gap-[10px]">
+            <Dropdown
+              variant="filled"
+              value={selectedTravelType}
+              onChange={(e) => setSelectedTravelType(e.value)}
+              options={travelType}
+              optionLabel="name"
+              className="w-full md:w-14rem bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm pl-3"
+            />
+            <Dropdown
+              variant="filled"
+              value={selectedTravelPurpose}
+              onChange={(e) => setSelectedTravelPurpose(e.value)}
+              options={travelPurpose}
+              optionLabel="name"
+              className="w-full md:w-14rem  bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm pl-3"
             />
           </div>
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
-            <p className="text-xs text-left text-[#29292950]">To</p>
-            <div className="flex">
+        </div>
+
+        <div className="flex gap-[5px] mb-5 2xl:flex-row flex-col">
+          <div className="flex flex-col md:flex-row gap-[5px] basis-2/5">
+            <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full basis-1/2">
+              <p className="text-xs text-left text-[#29292950]">From</p>
               <input
                 type="text"
                 placeholder="From"
-                className="text-xs bg-gray-100 text-[#292929]"
-                defaultValue="London Gatwick (LGW)"
+                className="text-xs bg-gray-100 text-[#292929] w-full"
+                defaultValue="Bali, (Denpasar) (DPS)"
               />
-              <div className="absolute items-center justify-center -ml-10 -my-2">
-                <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center">
+            </div>
+            <div className=" border-black p-5 bg-gray-100 rounded-[7px] w-full basis-1/2">
+              <p className="text-xs text-left text-[#29292950]">To</p>
+              <div className="flex relative">
+                <input
+                  type="text"
+                  placeholder="From"
+                  className="text-xs bg-gray-100 text-[#292929] w-full"
+                  defaultValue="London Gatwick (LGW)"
+                />
+                <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center absolute lg:-top-[10px] lg:-left-[40px] md:-top-[10px] md:-left-[40px] -ml-4 md:ml-0 -top-[54px] left-[50%]">
                   <svg
                     width="17"
                     height="16"
@@ -102,41 +144,45 @@ const SearchBar = () => {
               </div>
             </div>
           </div>
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
-            <p className="text-xs text-left text-[#29292950]">Depart</p>
-            <input
-              type="text"
-              placeholder="From"
-              className="text-xs bg-gray-100 text-[#292929]"
-              defaultValue="05/06/2024"
-            />
+          <div className="flex gap-[5px] flex-col md:flex-row w-full basis-3/5">
+            <div className="flex gap-[5px] basis-2/3 w-full">
+              <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full">
+                <p className="text-xs text-left text-[#29292950]">Depart</p>
+                <input
+                  type="text"
+                  placeholder="From"
+                  className="text-xs bg-gray-100 text-[#292929] w-full"
+                  defaultValue="05/06/2024"
+                />
+              </div>
+              <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full">
+                <p className="text-xs text-left text-[#29292950]">Return</p>
+                <input
+                  type="text"
+                  placeholder="From"
+                  className="text-xs bg-gray-100 text-[#292929] w-full"
+                  defaultValue="07/06/2024"
+                />
+              </div>
+            </div>
+            <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full">
+              <p className="text-xs text-left text-[#29292950]">Travellers</p>
+              <input
+                type="text"
+                placeholder="From"
+                className="text-xs bg-gray-100 text-[#292929] w-full"
+                defaultValue="1Children, 1Adult"
+              />
+            </div>
           </div>
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
-            <p className="text-xs text-left text-[#29292950]">Return</p>
-            <input
-              type="text"
-              placeholder="From"
-              className="text-xs bg-gray-100 text-[#292929]"
-              defaultValue="07/06/2024"
-            />
-          </div>
-          <div className=" border-black p-5 bg-gray-100 rounded-[7px]">
-            <p className="text-xs text-left text-[#29292950]">Travellers</p>
-            <input
-              type="text"
-              placeholder="From"
-              className="text-xs bg-gray-100 text-[#292929]"
-              defaultValue="1Children, 1Adult"
-            />
-          </div>
-          <button
-            onClick={() => navigate('/search')}
-            className="text-white p-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
-            <BiSearch color="white" /> Search
-          </button>
         </div>
+        <button
+          onClick={() => navigate('/search')}
+          className="text-white md:py-5 py-4 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
+          <BiSearch color="white" /> Search
+        </button>
 
-        <div className="flex gap-[15px]">
+        {/* <div className="flex gap-[15px]">
           <p className="text-[#9f9f9f] text-xs">Popular Filters:</p>
           <div className="flex gap-[15px]">
             <button
@@ -182,7 +228,7 @@ const SearchBar = () => {
               Flexible Dates
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
