@@ -1,20 +1,20 @@
 export const Guide = () => {
   return (
-    <div className="flex justify-center relative mt-16">
+    <div className="flex justify-center items-center relative px-5 sm:px-[60px] pt-[50px]">
       <img
-        src="assets/img/beach.jpg"
+        src="assets/img/sub_background.png"
         alt="No find the image"
         className="w-[1324px] h-[460px] rounded-[20px]"
       />
-      <div className="absolute flex flex-col justify-center items-center py-[98px] px-[284px]">
-        <p className="text-[52px] w-2/3 text-white text-center">
+      <div className="absolute flex flex-col justify-center items-center px-[50px] lg:px-[284px] md:px-[90px] sm:px-[90px]">
+        <p className="flex-1 text-[28px] sm:text-[52px] text-white text-center font-semibold">
           Find the Best Deals Every Time From Everywhere
         </p>
-        <p className="text-[18px] w-2/3 text-white">
+        <p className="text-[14px] sm:text-[18px] text-white">
           Access comprehensive price comparisons from top vendors, ensuring you get the best
           possible deals on flights and hotels, tailored to your specific needs
         </p>
-        <button className="rounded-[10px] bg-white text-[18px] text-[#292929] py-4 px-[28px] mt-8">
+        <button className="rounded-[10px] bg-white text-[14px] sm:text-[18px] text-[#292929] sm:py-4 sm:px-[28px] py-4 px-7 mt-8 font-semibold">
           Read the Guide
         </button>
       </div>

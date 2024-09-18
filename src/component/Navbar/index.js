@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
           <div className="hover:text-gray-400 hidden tablet:block">Bookmark</div>
           <div className="items-center mobile:block hidden">
-            <img src="path/to/profile-pic.jpg" alt="Profile" className="w-8 h-8 rounded-full" />
+            <img src="assets/img/avatar.png" alt="Profile" className="w-8 h-8 rounded-full" />
           </div>
           <button className="text-gray-400 hover:text-white">
             <TfiAlignJustify />
