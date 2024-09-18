@@ -13,15 +13,15 @@ export const LandingCarousel = () => {
   };
 
   return (
-    <div className="mt-[380px] sm:mt-[240px] md:mt-[230px] lg:mt-[320px] 2xl:mt-[240px] flex">
+    <div className="mt-[300px] sm:mt-[240px] md:mt-[230px] lg:mt-[320px] 2xl:mt-[160px] flex">
       <Slider {...settings}>
         <div>
           <div className="relative bg-black h-[200px] sm:h-[347px] w-[350px] sm:w-[600px] flex items-center justify-center text-white m-10 overflow-hidden rounded-[20px]">
-            {/* <img
-              src="assets/img/beach.jpg"
+            <img
+              src="assets/img/discount coupons.png"
               alt="No find the image"
-              className="object-cover w-full"
-            /> */}
+              className=" absolute right-0 bottom-0"
+            />
             <p className="absolute w-[245px] sm:w-[426px] leading-[32px] sm:leading-[52px] sm:text-[48px] text-[28px] font-bold text-white top-[13px] sm:top-[23px] left-[17px] sm:left-[30px]">
               FIRST TRANSACTION PROMO
             </p>

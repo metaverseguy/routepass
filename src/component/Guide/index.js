@@ -6,7 +6,7 @@ export const Guide = () => {
         alt="No find the image"
         className="w-[1324px] h-[460px] rounded-[20px]"
       />
-      <div className="absolute flex flex-col justify-center items-center px-[50px] lg:px-[284px] md:px-[90px] sm:px-[90px]">
+      <div className="absolute max-w-[757px] flex flex-col justify-center items-center mx-[33px] sm:mx-[90px]">
         <p className="flex-1 text-[28px] sm:text-[52px] text-white text-center font-semibold">
           Find the Best Deals Every Time From Everywhere
         </p>
