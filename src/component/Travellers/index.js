@@ -23,7 +23,7 @@ export const Travllers = () => {
           Satisfied Customers
         </p>
       </div>
-      <div className="flex gap-6">
+      <div className="flex gap-6 overflow-hidden">
         <Slider {...settings}>
           <Traveller />
           <Traveller />
@@ -34,7 +34,7 @@ export const Travllers = () => {
           <Traveller />
         </Slider>
       </div>
-      <div className="flex gap-6">
+      <div className="flex gap-6 overflow-hidden">
         <Slider {...settings}>
           <Traveller />
           <Traveller />
