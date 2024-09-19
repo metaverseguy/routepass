@@ -135,7 +135,7 @@ export default function searchFunc() {
                 onChange={(e) => setSelectedTravelType(e.value)}
                 options={travelType}
                 optionLabel="name"
-                className="w-full md:w-14rem bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm pl-3"
+                className="w-full md:w-14rem bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm"
               />
               <Dropdown
                 variant="filled"
@@ -143,7 +143,7 @@ export default function searchFunc() {
                 onChange={(e) => setSelectedTravelPurpose(e.value)}
                 options={travelPurpose}
                 optionLabel="name"
-                className="w-full md:w-14rem  bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm pl-3"
+                className="w-full md:w-14rem  bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm"
               />
             </div>
           </div>
