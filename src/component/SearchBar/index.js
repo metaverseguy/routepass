@@ -29,27 +29,27 @@ const SearchBar = () => {
   ];
 
   const searchResultArray = [
-    {
-      from: 'Bali, (Denpasar) (DPS)',
-      to: 'London Gatwick (LGW)',
-      depart: '05/06/2024',
-      travllers: '1 Children , 1 Adult',
-      classType: 'Economy'
-    },
-    {
-      from: 'Bali, (Denpasar) (DPS)',
-      to: 'London Gatwick (LGW)',
-      depart: '05/06/2024',
-      travllers: '1 Children , 1 Adult',
-      classType: 'Economy'
-    },
-    {
-      from: 'Bali, (Denpasar) (DPS)',
-      to: 'London Gatwick (LGW)',
-      depart: '05/06/2024',
-      travllers: '1 Children , 1 Adult',
-      classType: 'Economy'
-    }
+    // {
+    //   from: 'Bali, (Denpasar) (DPS)',
+    //   to: 'London Gatwick (LGW)',
+    //   depart: '05/06/2024',
+    //   travllers: '1 Children , 1 Adult',
+    //   classType: 'Economy'
+    // },
+    // {
+    //   from: 'Bali, (Denpasar) (DPS)',
+    //   to: 'London Gatwick (LGW)',
+    //   depart: '05/06/2024',
+    //   travllers: '1 Children , 1 Adult',
+    //   classType: 'Economy'
+    // },
+    // {
+    //   from: 'Bali, (Denpasar) (DPS)',
+    //   to: 'London Gatwick (LGW)',
+    //   depart: '05/06/2024',
+    //   travllers: '1 Children , 1 Adult',
+    //   classType: 'Economy'
+    // }
   ];
 
   return (
