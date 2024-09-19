@@ -6,7 +6,7 @@ import { IoStarSharp } from 'react-icons/io5';
 
 const FlightCard = () => {
   return (
-    <div className="mx-auto bg-white shadow-md rounded-lg overflow-hidden w-2/3">
+    <div className="bg-white shadow-md rounded-lg overflow-hidden">
       <div className="items-center p-4 border-dashed justify-center grid grid-cols-4">
         <div className="flex items-center gap-1">
           <img src="https://via.placeholder.com/50" alt="Airline Logo" className="w-12 h-12" />
@@ -52,7 +52,7 @@ const FlightCard = () => {
       </div>
 
       <div className="p-4 border-dashed">
-        <p className="flex items-center justify-center text-black bg-slate-400 p-2 rounded-xl text-center">
+        <p className="flex items-center justify-center text-black bg-[#F1F7FF] p-2 rounded-xl text-center">
           <AiOutlineExclamationCircle />
           Included: Personal Item, Cabin Bag, Checked Bag
         </p>
