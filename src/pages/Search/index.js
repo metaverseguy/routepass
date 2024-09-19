@@ -6,7 +6,7 @@ import PriceTracker from './PriceTracker';
 import { AiOutlineExclamationCircle } from 'react-icons/ai';
 import { TbAlignCenter } from 'react-icons/tb';
 import HotelCard from './HotelCard';
-import { Footer } from '../Footer';
+import { Footer } from '../../component/Footer';
 
 export const Search = () => {
   const hotels = [
