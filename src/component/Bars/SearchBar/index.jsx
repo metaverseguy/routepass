@@ -114,15 +114,15 @@ const SearchBar = () => {
           </div>
         </div>
 
-        <div className="block md:hidden">
-          <div className="card flex justify-content-center gap-[10px]">
+        <div className="block md:hidden w-full">
+          <div className="flex justify-center items-stretch gap-[10px]">
             <Dropdown
               variant="filled"
               value={selectedTravelType}
               onChange={(e) => setSelectedTravelType(e.value)}
               options={travelType}
               optionLabel="name"
-              className="w-full md:w-14rem bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm pl-3"
+              className="w-full bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm"
             />
             <Dropdown
               variant="filled"
@@ -130,7 +130,7 @@ const SearchBar = () => {
               onChange={(e) => setSelectedTravelPurpose(e.value)}
               options={travelPurpose}
               optionLabel="name"
-              className="w-full md:w-14rem  bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm pl-3"
+              className="w-full bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm"
             />
           </div>
         </div>

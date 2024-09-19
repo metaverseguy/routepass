@@ -13,7 +13,7 @@ export const LandingCarousel = () => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden flex">
       <Slider {...settings}>
         <div>
           <div className="relative bg-black h-[200px] sm:h-[347px] w-[350px] sm:w-[600px] flex items-center justify-center text-white m-10 overflow-hidden rounded-[20px]">
