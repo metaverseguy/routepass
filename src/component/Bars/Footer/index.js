@@ -1,7 +1,7 @@
-import { LinkedInSVG } from '../SVGs/LinkedIn';
-import { InstagramSVG } from '../SVGs/Instagram';
-import { XSVG } from '../SVGs/X';
-import { FacebookSVG } from '../SVGs/Facebook';
+import { LinkedInSVG } from '../../SVGs/LinkedIn';
+import { InstagramSVG } from '../../SVGs/Instagram';
+import { XSVG } from '../../SVGs/X';
+import { FacebookSVG } from '../../SVGs/Facebook';
 
 export const Footer = () => {
   return (

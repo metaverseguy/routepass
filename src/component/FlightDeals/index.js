@@ -1,4 +1,4 @@
-import { DealCard } from './DealCard';
+import { DealCard } from '../Cards/DealCard';
 
 export const FlightDeals = () => {
   return (

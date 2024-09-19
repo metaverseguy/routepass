@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NotificationBanner from '../NotificationBanner';
+import NotificationBanner from '../../NotificationBanner';
 import { TfiAlignJustify } from 'react-icons/tfi';
 import { GoTriangleDown } from 'react-icons/go';
 import { RiGlobalFill } from 'react-icons/ri';
