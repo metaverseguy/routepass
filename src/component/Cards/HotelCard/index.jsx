@@ -4,8 +4,11 @@ import { Rating } from 'react-simple-star-rating';
 
 const HotelCard = ({ hotel }) => {
   return (
-    <div className="bg-white rounded-[15px] shadow overflow-hidden w-full">
+    <div className="bg-white rounded-[15px] shadow overflow-hidden w-full relative">
       <img src={hotel.image} alt={hotel.name} className="w-full object-cover" />
+      <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
+        <p className="p-0 m-[0] top-[-8px] absolute">+</p>
+      </button>
       <div className="bg-white px-5 py-4 flex flex-col gap-y-[26px] overflow-hidden">
         <div className="flex items-stretch justify-between">
           <div className="flex flex-col gap-y-[5px]">
