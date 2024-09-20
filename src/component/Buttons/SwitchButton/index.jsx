@@ -9,7 +9,7 @@ const SwitchButton = () => {
 
   return (
     <>
-      <label className="themeSwitcherTwo relative inline-flex cursor-pointer select-none items-center">
+      <label className="themeSwitcherTwo relative inline-flex cursor-pointer select-none items-center !w-[62px]">
         <input
           type="checkbox"
           checked={isChecked}
