@@ -23,3 +23,9 @@ code {
   color: #ff9900 !important;
   width: 80px !important;
 }
+
+@layer components {
+  .c-gray21 {
+    background-color: #363636;
+  }
+}
