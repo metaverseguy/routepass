@@ -68,7 +68,7 @@ export const FilterSearchResult = () => {
       )}
       <div className={`${visibleFilterSetting === 'mobile' ? 'block' : 'hidden'}`}>
         <div
-          className={`h-auto ${visibleFilterSetting === 'mobile' ? 'w-full fixed block top-0 left-1/2 sm:left-auto transform -translate-x-1/2 sm:translate-x-0 sm:right-0 z-50 sm:w-1/2 max-w-[324px]' : visibleFilterSetting === 'desktop' ? '' : 'hidden'}`}>
+          className={`h-auto ${visibleFilterSetting === 'mobile' ? 'w-full absolute block top-0 left-1/2 sm:left-auto transform -translate-x-1/2 sm:translate-x-0 sm:right-0 z-50 sm:w-1/2 max-w-[324px]' : visibleFilterSetting === 'desktop' ? '' : 'hidden'}`}>
           <div className="bg-white w-full  px-6">
             <div className=" py-5 border-b flex justify-between">
               <p
