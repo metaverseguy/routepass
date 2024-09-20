@@ -1,6 +1,7 @@
 import Navbar from '../../component/Bars/Navbar';
 import { DetailHeader } from '../../component/Bars/DetailHeader';
 import { FlightDetail } from '../../component/FlightDetail';
+import { Footer } from '../../component/Bars/Footer';
 
 export const Detail = () => {
   return (
@@ -8,6 +9,7 @@ export const Detail = () => {
       <Navbar />
       <DetailHeader />
       <FlightDetail />
+      <Footer />
     </div>
   );
 };

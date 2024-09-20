@@ -4,9 +4,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f8f8f8;
@@ -14,8 +13,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .style-module_emptyIcons__Bg-FZ {
@@ -27,5 +25,23 @@ code {
 @layer components {
   .c-gray21 {
     background-color: #363636;
+  }
+  .c-chromaphobicblack {
+    color: #292929;
+  }
+  .c-chromaphobicblackhalf {
+    color: #29292950;
+  }
+  .c-orangepeel {
+    color:#ff9900;
+  }
+  .c-eerieblack {
+    color: #1e1e1e;
+  }
+  .c-eerieblackhalf {
+    color: #1e1e1e50;
+  }
+  .bg-whitesmoke {
+    background-color: #f8f8f8;
   }
 }
