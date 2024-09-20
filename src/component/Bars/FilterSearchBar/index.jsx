@@ -2,12 +2,14 @@ import { FilterAccordion } from '../../FilterAccordion';
 import SwitchButton from '../../Buttons/SwitchButton';
 import { useState } from 'react';
 import MultiRangeSlider from '../../Multirangeslider';
+import PropTypes from 'prop-types';
 
-export const FilterSearchBar = () => {
+export const FilterSearchBar = ({ visible }) => {
   const [timesValue, setTimesValue] = useState('take-off');
 
   return (
-    <div className="w-1/3 h-full bg-white shadow rounded-[15px] flex flex-col gap-y-[27px] px-5 py-6">
+    <div
+      className={`bg-white  ${visible === 'mobile' ? 'rounded-none' : 'rounded-[15px] shadow'} flex flex-col gap-y-[27px] px-5 py-6 w-full`}>
       <div className="px-5 py-4 bg-[#f5f5f5] flex justify-between rounded-[10px]">
         <p className="text-[14px] font-semibold">Track Prices</p>
         <SwitchButton />
@@ -327,4 +329,8 @@ export const FilterSearchBar = () => {
       </FilterAccordion>
     </div>
   );
+};
+
+FilterSearchBar.propTypes = {
+  visible: PropTypes.bool.isRequired,
 };

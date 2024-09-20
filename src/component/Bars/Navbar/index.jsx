@@ -24,7 +24,7 @@ const Navbar = () => {
               fill="white"
             />
           </svg>
-          <a href="/" className="text-[26px] font-bold">
+          <a href="/" className="text-[18px] md:text-[26px] font-bold">
             RoutePass
           </a>
         </div>
@@ -36,12 +36,12 @@ const Navbar = () => {
             onClick={() => setActiveTab('flights')}>
             <span className="flex items-center gap-2">
               <BiSolidPlaneAlt />
-              Flights
+              <p className="text-[12px] sm:text-sm">Flights</p>
               <IoChevronDownOutline className="block mobile:hidden" />
             </span>
           </button>
           <button
-            className={`px-4 py-2 hidden mobile:block rounded-full ${
+            className={`px-4 py-2 hidden text-[12px] sm:text-sm sm:block rounded-full ${
               activeTab === 'hotels' ? 'bg-gray-800 text-white' : 'text-gray-400'
             }`}
             onClick={() => setActiveTab('hotels')}>
@@ -49,15 +49,15 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex gap-6 text-sm items-center">
-          <div className="relative hidden tablet:block">
+          <div className="relative hidden md:block">
             <button className="flex items-center">
               <RiGlobalFill color="white" />
               <span>English</span>
               <GoTriangleDown />
             </button>
           </div>
-          <div className="hover:text-gray-400 hidden tablet:block">Bookmark</div>
-          <div className="items-center mobile:block hidden">
+          <div className="hover:text-gray-400 hidden md:block">Bookmark</div>
+          <div className="items-center sm:block hidden">
             <img src="assets/img/avatar.png" alt="Profile" className="w-8 h-8 rounded-full" />
           </div>
           <button className="text-gray-400 hover:text-white">

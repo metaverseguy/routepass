@@ -14,18 +14,18 @@ const SearchBar = () => {
   const [selectedTravelType, setSelectedTravelType] = useState({ name: 'Return', code: 'rt' });
   const [selectedTravelPurpose, setSelectedTravelPurpose] = useState({
     name: 'Economy',
-    code: 'en'
+    code: 'en',
   });
 
   const travelType = [
     { name: 'Return', code: 'rt' },
     { name: 'One Way', code: 'ow' },
-    { name: 'Multi-City', code: 'mc' }
+    { name: 'Multi-City', code: 'mc' },
   ];
   const travelPurpose = [
     { name: 'Economy', code: 'en' },
     { name: 'Business', code: 'bn' },
-    { name: 'First Class', code: 'fc' }
+    { name: 'First Class', code: 'fc' },
   ];
 
   const searchResultArray = [
@@ -63,20 +63,41 @@ const SearchBar = () => {
           <div className="flex justify-between mb-5">
             <div className="gap-4 flex justify-center items-center">
               <div>
-                <input type="radio" id="return" name="trip" value="return" defaultChecked />
-                <label htmlFor="return" className="ml-2">
+                <input
+                  type="radio"
+                  id="return"
+                  name="trip"
+                  value="return"
+                  defaultChecked
+                  onClick={() => setSelectedTravelType({ name: 'Return', code: 'rt' })}
+                />
+                <label htmlFor="return" className="ml-2 text-white">
                   Return
                 </label>
               </div>
               <div>
-                <input type="radio" id="one-way" name="trip" value="one-way" />
-                <label htmlFor="one-way" className="ml-2">
+                <input
+                  type="radio"
+                  id="one-way"
+                  name="trip"
+                  value="one-way"
+                  onClick={() => setSelectedTravelType({ name: 'One Way', code: 'ow' })}
+                />
+                <label
+                  htmlFor="one-way"
+                  className={`ml-2 ${selectedTravelType.name === 'One Way' ? 'text-white' : 'text-[#ffffff50]'}`}>
                   One Way
                 </label>
               </div>
               <div>
-                <input type="radio" id="multi-city" name="trip" value="multi-city" />
-                <label htmlFor="multi-city" className="ml-2">
+                <input
+                  type="radio"
+                  id="multi-city"
+                  name="trip"
+                  value="multi-city"
+                  onClick={() => setSelectedTravelType({ name: 'Multi-City', code: 'mc' })}
+                />
+                <label htmlFor="multi-city" className="ml-2 text-white">
                   Multi-City
                 </label>
               </div>

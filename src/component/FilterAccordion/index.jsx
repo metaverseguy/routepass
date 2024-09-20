@@ -3,7 +3,7 @@ import { TECollapse } from 'tw-elements-react';
 import PropTypes from 'prop-types';
 
 export const FilterAccordion = ({ children, title }) => {
-  const [activeElement, setActiveElement] = useState('element1');
+  const [activeElement, setActiveElement] = useState('');
 
   const handleClick = (value) => {
     if (value === activeElement) {
@@ -59,5 +59,5 @@ export const FilterAccordion = ({ children, title }) => {
 
 FilterAccordion.propTypes = {
   children: PropTypes.any,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
