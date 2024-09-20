@@ -9,7 +9,7 @@ export const LandingCarousel = () => {
     speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: true
+    variableWidth: true,
   };
 
   return (

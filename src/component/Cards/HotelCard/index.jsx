@@ -52,8 +52,8 @@ HotelCard.propTypes = {
     distance: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
-    reviews: PropTypes.string.isRequired
-  }).isRequired
+    reviews: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default HotelCard;

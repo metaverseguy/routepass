@@ -85,5 +85,5 @@ SearchResult.propTypes = {
   depart: PropTypes.string.isRequired,
   travllers: PropTypes.string.isRequired,
   classType: PropTypes.string.isRequired,
-  onClearHandle: PropTypes.any.isRequired
+  onClearHandle: PropTypes.any.isRequired,
 };

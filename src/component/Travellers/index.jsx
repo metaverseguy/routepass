@@ -11,7 +11,7 @@ export const Travllers = () => {
     // speed: 2000,
     autoplaySpeed: 3000,
     cssEase: 'linear',
-    variableWidth: true
+    variableWidth: true,
   };
 
   return (

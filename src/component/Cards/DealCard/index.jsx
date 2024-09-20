@@ -50,5 +50,5 @@ DealCard.propTypes = {
   startDate: PropTypes.string.isRequired,
   endDate: PropTypes.string.isRequired,
   airInfo: PropTypes.string.isRequired,
-  imgURL: PropTypes.string.isRequired
+  imgURL: PropTypes.string.isRequired,
 };

@@ -15,5 +15,5 @@ export const Question = ({ title, content }) => {
 
 Question.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired
+  content: PropTypes.string.isRequired,
 };
