@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { TECollapse } from 'tw-elements-react';
 import PropTypes from 'prop-types';
 
-export const FilterAccordion = ({ children }) => {
-  const [activeElement, setActiveElement] = useState('');
+export const FilterAccordion = ({ children, title }) => {
+  const [activeElement, setActiveElement] = useState('element1');
 
   const handleClick = (value) => {
     if (value === activeElement) {
@@ -19,12 +19,12 @@ export const FilterAccordion = ({ children }) => {
           <button
             className={`${
               activeElement === 'element1' && `text-primary`
-            } group relative flex w-full items-center rounded-none bg-white px-5 py-4 text-left text-base text-neutral-800 transition`}
+            } group relative flex w-full items-center rounded-none bg-white text-left text-base text-[#292929] font-semibold transition`}
             type="button"
             onClick={() => handleClick('element1')}
             aria-expanded="true"
             aria-controls="collapseOne">
-            Accordion Item #1
+            {title}
             <span
               className={`${
                 activeElement === 'element1'
@@ -37,7 +37,7 @@ export const FilterAccordion = ({ children }) => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="h-6 w-6">
+                className="h-5 w-5">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -58,5 +58,6 @@ export const FilterAccordion = ({ children }) => {
 };
 
 FilterAccordion.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
+  title: PropTypes.string.isRequired
 };
