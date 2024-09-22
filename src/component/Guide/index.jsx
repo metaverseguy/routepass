@@ -1,11 +1,9 @@
-export const Guide = () => {
+import PropTypes from 'prop-types';
+
+export const Guide = ({ imgURL }) => {
   return (
     <div className="flex justify-center items-center relative px-5 sm:px-[60px] pt-[50px]">
-      <img
-        src="assets/img/sub_background.png"
-        alt="No find the image"
-        className="w-[1324px] h-[460px] rounded-[20px]"
-      />
+      <img src={imgURL} alt="No find the image" className="w-[1324px] h-[460px] rounded-[20px]" />
       <div className="absolute max-w-[757px] flex flex-col justify-center items-center mx-[33px] sm:mx-[90px]">
         <p className="flex-1 text-[28px] sm:text-[52px] text-white text-center font-semibold">
           Find the Best Deals Every Time From Everywhere
@@ -20,4 +18,8 @@ export const Guide = () => {
       </div>
     </div>
   );
+};
+
+Guide.propTypes = {
+  imgURL: PropTypes.string.isRequired,
 };

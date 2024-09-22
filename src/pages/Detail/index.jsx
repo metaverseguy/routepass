@@ -6,7 +6,7 @@ import { Footer } from '../../component/Bars/Footer';
 export const Detail = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar title="flights" />
       <DetailHeader />
       <FlightDetail />
       <Footer />

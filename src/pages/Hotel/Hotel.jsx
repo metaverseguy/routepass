@@ -4,27 +4,27 @@ import Header from '../../component/Bars/Header';
 import { LandingCarousel } from '../../component/LandingCarousel';
 import { Support } from '../../component/Support';
 import { Guide } from '../../component/Guide';
-import { FlightDeals } from '../../component/FlightDeals';
+import { FlightHotel } from '../../component/FlightHotel';
 import { Travllers } from '../../component/Travellers';
 import { Subscribe } from '../../component/Subscribe';
 import { Questions } from '../../component/Questions';
 import { Footer } from '../../component/Bars/Footer';
 
-const Main = () => {
+const Hotel = () => {
   return (
     <div>
-      <Navbar title="flights" />
+      <Navbar title="hotels" />
       <Header />
       <LandingCarousel />
       <Support />
-      <Guide imgURL="assets/img/sub_background.png" />
-      <FlightDeals />
+      <Guide imgURL="assets/img/hotel_sub_background.png" />
+      <FlightHotel />
       <Travllers />
-      <Subscribe imgURL="assets/img/sub_background.png" />
+      <Subscribe imgURL="assets/img/hotels/kuala lumpur.png" />
       <Questions />
       <Footer />
     </div>
   );
 };
 
-export default Main;
+export default Hotel;

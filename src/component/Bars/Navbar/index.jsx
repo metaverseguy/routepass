@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import NotificationBanner from '../../NotificationBanner';
 import { TfiAlignJustify } from 'react-icons/tfi';
 import { GoTriangleDown } from 'react-icons/go';
@@ -6,8 +8,10 @@ import { RiGlobalFill } from 'react-icons/ri';
 import { BiSolidPlaneAlt } from 'react-icons/bi';
 import { IoChevronDownOutline } from 'react-icons/io5';
 
-const Navbar = () => {
-  const [activeTab, setActiveTab] = useState('flights');
+const Navbar = ({ title }) => {
+  const [activeTab, setActiveTab] = useState(title);
+  const navigate = useNavigate();
+
   return (
     <>
       <NotificationBanner />
@@ -33,7 +37,10 @@ const Navbar = () => {
             className={`px-4 py-2 rounded-full ${
               activeTab === 'flights' ? 'bg-gray-800 text-white' : 'text-gray-400'
             }`}
-            onClick={() => setActiveTab('flights')}>
+            onClick={() => {
+              setActiveTab('flights');
+              navigate('/');
+            }}>
             <span className="flex items-center gap-2">
               <BiSolidPlaneAlt />
               <p className="text-[12px] sm:text-sm">Flights</p>
@@ -44,7 +51,10 @@ const Navbar = () => {
             className={`px-4 py-2 hidden text-[12px] sm:text-sm sm:block rounded-full ${
               activeTab === 'hotels' ? 'bg-gray-800 text-white' : 'text-gray-400'
             }`}
-            onClick={() => setActiveTab('hotels')}>
+            onClick={() => {
+              setActiveTab('hotels');
+              navigate('/hotel');
+            }}>
             Hotels
           </button>
         </div>
@@ -67,6 +77,10 @@ const Navbar = () => {
       </nav>
     </>
   );
+};
+
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default Navbar;

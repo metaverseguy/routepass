@@ -7,7 +7,7 @@ import { FilterSearchResult } from '../../component/FilterSearchResult';
 export const Search = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar title="flights" />
       <SearchFunc />
       <FilterSearchResult />
       <Footer />

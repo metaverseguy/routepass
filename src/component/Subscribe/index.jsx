@@ -1,12 +1,10 @@
-export const Subscribe = () => {
+import PropTypes from 'prop-types';
+
+export const Subscribe = ({ imgURL }) => {
   return (
     <div>
       <div className="rounded-[20px] mx-[20px] sm:mx-[60px] my-[100px] overflow-hidden border border-[#ededed] bg-white flex flex-col lg:flex-row justify-center items-stretch text-[#292929]">
-        <img
-          src="assets/img/sub_background.png"
-          alt="Not find the image"
-          className="object-cover w-full lg:w-1/3"
-        />
+        <img src={imgURL} alt="Not find the image" className="object-cover w-full lg:w-1/3" />
         <div className="p-[20px] pb-[40px] sm:p-[60px]">
           <p className="text-center lg:text-left text-[28px] sm:text-[36px] font-semibold mb-[10px]">
             Secure this exceptional deal today
@@ -34,3 +32,9 @@ export const Subscribe = () => {
     </div>
   );
 };
+
+Subscribe.propTypes = {
+  imgURL: PropTypes.string.isRequired,
+};
+
+export default Subscribe;
