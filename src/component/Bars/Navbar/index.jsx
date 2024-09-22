@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <NotificationBanner />
-      <nav className="bg-[#1E1E1E] text-white flex items-center justify-between p-4 w-full">
+      <nav className="relative bg-[#1E1E1E] text-white flex items-center justify-between p-4 w-full z-20">
         <div className="flex items-center gap-1">
           <svg
             width="23"

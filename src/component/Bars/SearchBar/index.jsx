@@ -53,7 +53,7 @@ const SearchBar = () => {
   ];
 
   return (
-    <div className="-mt-[600px] md:-mt-[500px] flex flex-col items-center justify-center text-black text-center gap-20 w-full xl:px-44 xl:pt-28 lg:px-12 lg:pt-28 px-5 pt-20 z-20">
+    <div className="-mt-[600px] md:-mt-[500px] flex flex-col items-center justify-center text-black text-center gap-20 w-full xl:px-44 xl:pt-28 lg:px-12 lg:pt-28 px-5 pt-20 z-0">
       <p className="text-[36px] lg:text-[56px] text-center max-w-[880px] font-bold text-white w-full">
         Get exclusive flight offers wherever your journey takes you
       </p>
