@@ -1,16 +1,15 @@
 import React from 'react';
 import Navbar from '../../component/Bars/Navbar';
 import SearchFunc from '../../component/SearchFunc/searchFunc';
-import { FilterSearchResult } from '../../component/FilterSearchResult';
+import { FilterSearch } from '../../component/FilterSearch';
 import { Footer } from '../../component/Bars/Footer';
-
-export const Search = () => {
+export default function HotelSearch() {
   return (
-    <div>
-      <Navbar title="flights" />
+    <>
+      <Navbar title="hotels" />
       <SearchFunc />
-      <FilterSearchResult />
+      <FilterSearch />
       <Footer />
-    </div>
+    </>
   );
-};
+}

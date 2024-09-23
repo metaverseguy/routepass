@@ -5,6 +5,8 @@ import { Search } from './pages/Search';
 import { Detail } from './pages/Detail';
 import Hotel from './pages/Hotel/Hotel.jsx';
 import Contact from './pages/Contact';
+import HotelSearch from './pages/HotelSearch';
+
 import './App.css';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
         <Route path="/detail" element={<Detail />} />
         <Route path="/hotel" element={<Hotel />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/hotelsearch" element={<HotelSearch />} />
       </Routes>
     </BrowserRouter>
   );
