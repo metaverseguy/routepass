@@ -1,3 +1,4 @@
+//Flight Hotel Page
 import HotelCard from '../Cards/HotelCard';
 import BestFlightDeal from '../Cards/BestFlightDeal';
 
