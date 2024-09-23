@@ -4,11 +4,11 @@ import { DealCard } from '../Cards/DealCard';
 import HotelSearchCard from '../Cards/HotelSearchCard';
 import { GiSettingsKnobs } from 'react-icons/gi';
 import { Dropdown } from 'primereact/dropdown';
-import { FilterSearchBar } from '../Bars/FilterSearchBar';
+import { HotelFilterSearchBar } from '../Bars/HotelFilterSearchBar';
 import { useState } from 'react';
 import { BiX } from 'react-icons/bi';
 
-export const FilterSearch = () => {
+export const HotelFilterSearchResult = () => {
   const [flightTypeValue, setFlightTypeValue] = useState({
     name: 'Cheapest',
     code: 'cp',
@@ -25,8 +25,8 @@ export const FilterSearch = () => {
 
   return (
     <div className={`px-5 md:px-[60px] py-10 md:py-10 flex lg:gap-[20px] w-full`}>
-      <div className="w-1/3 hidden lg:block">
-        <FilterSearchBar visible={'desktop'} />
+      <div className="w-1/3 hidden xl:block">
+        <HotelFilterSearchBar visible={'desktop'} />
       </div>
       {visibleFilterSetting === 'mobile' && (
         <div
@@ -54,7 +54,7 @@ export const FilterSearch = () => {
               </button>
             </div>
           </div>
-          <FilterSearchBar visible={visibleFilterSetting} />
+          <HotelFilterSearchBar visible={visibleFilterSetting} />
         </div>
       </div>
       <div className="flex flex-col w-full gap-y-10">

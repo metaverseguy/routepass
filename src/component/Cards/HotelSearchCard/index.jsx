@@ -4,13 +4,13 @@ import { Rating } from 'react-simple-star-rating';
 
 const HotelSearchCard = () => {
   return (
-    <div className="mx-auto bg-white rounded-lg shadow-md overflow-hidden grid grid-cols-4">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden flex py-6 px-8 gap-5">
       <img
-        className="w-full h-full object-cover col-span-1"
-        src="https://via.placeholder.com/400" // Replace with your image URL
+        className="w-auto h-full object-cover col-span-1"
+        src="assets/img/hotels/hotel_search.png" // Replace with your image URL
         alt="Hotel"
       />
-      <div className="w-full p-4 col-span-2">
+      <div className="flex flex-col gap-y-5">
         <div className="flex justify-between">
           <h2 className="text-xl font-semibold">Hotel 123</h2>
           <h2 className="text-xl font-semibold flex gap-2 items-center">
@@ -37,32 +37,42 @@ const HotelSearchCard = () => {
             <p className="text-gray-500 text-sm font-semibold">7123 reviews</p>
           </div>
         </div>
-        <div className="flex justify-between mt-4">
+        <div className="flex justify-between">
           <div className="flex flex-col">
-            <h2 className="text-gray-700">Booking.com</h2>
-            <h2 className="text-gray-700">$200</h2>
+            <h2 className="text-[12px] font-semibold c-chromaphobicblack">Booking.com</h2>
+            <h2 className="text-[18px] font-semibold c-eerieblack">$200</h2>
           </div>
+          <div className="mx-[30px] border-2 border-[#29292915] w-0"></div>
           <div className="flex flex-col">
-            <h2 className="text-gray-700">Trip.com</h2>
-            <h2 className="text-gray-700">$200</h2>
+            <h2 className="text-[12px] font-semibold c-chromaphobicblack">Trip.com</h2>
+            <h2 className="text-[18px] font-semibold c-eerieblack">$200</h2>
           </div>
+          <div className="mx-[30px] border-2 border-[#29292915] w-0"></div>
           <div className="flex flex-col">
-            <h2 className="text-gray-700">Agoda.com</h2>
-            <h2 className="text-gray-700">$200</h2>
+            <h2 className="text-[12px] font-semibold c-chromaphobicblack">Agoda.com</h2>
+            <h2 className="text-[18px] font-semibold c-eerieblack">$200</h2>
+          </div>
+          <div className="mx-[30px] border-2 border-[#29292915] w-0"></div>
+          <div className="flex items-center">
+            <h2 className="text-[12px] text-wrap font-semibold c-chromaphobicblack">See More</h2>
           </div>
         </div>
       </div>
-      <div>
-        <div className="w-full flex justify-between items-center mt-4 col-span-1">
-          <div className="flex items-center">
-            <span className="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
-              Great Price
-            </span>
-          </div>
-          <div className="text-lg font-bold">$250 / Night</div>
+      <div className="border-2 border-[#29292915] w-0"></div>
+      <div className="flex flex-col flex-1 gap-y-5">
+        <div className="w-full flex justify-between items-center">
+          <span className="text-base font-semibold bg-[#2461FF20] c-eerieblack rounded-[10px] py-2 px-6">
+            Great Price
+          </span>
         </div>
-        <p className="text-gray-500 mt-2">Cheapest provider by $75</p>
-        <button className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800">
+        <div className="flex flex-col gap-y-3">
+          <p className="c-eerieblack font-semibold text-base">Cheapest provider by $75</p>
+          <div className="flex items-center gap-1">
+            <p className="text-[32px] c-eerieblack font-semibold">$250</p>
+            <p className="text-sm c-chromaphobicblackhalf">/ Night</p>
+          </div>
+        </div>
+        <button className="text-base font-semibold text-white py-[14px] bg-[#333333] rounded-[10px]">
           Go to Site
         </button>
       </div>

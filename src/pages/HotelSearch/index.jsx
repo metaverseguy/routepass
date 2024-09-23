@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from '../../component/Bars/Navbar';
-import SearchFunc from '../../component/SearchFunc/searchFunc';
-import { FilterSearch } from '../../component/FilterSearch';
+import HotelSearchOption from '../../component/Bars/HotelSearchOption';
+import { HotelFilterSearchResult } from '../../component/HotelFilterSearchResult';
 import { Footer } from '../../component/Bars/Footer';
 export default function HotelSearch() {
   return (
     <>
       <Navbar title="hotels" />
-      <SearchFunc />
-      <FilterSearch />
+      <HotelSearchOption />
+      <HotelFilterSearchResult />
       <Footer />
     </>
   );

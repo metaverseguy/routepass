@@ -7,6 +7,7 @@ import { GoTriangleDown } from 'react-icons/go';
 import { RiGlobalFill } from 'react-icons/ri';
 import { BiSolidPlaneAlt } from 'react-icons/bi';
 import { IoChevronDownOutline } from 'react-icons/io5';
+import { FaHotel } from 'react-icons/fa6';
 
 const Navbar = ({ title }) => {
   const [activeTab, setActiveTab] = useState(title);
@@ -42,7 +43,9 @@ const Navbar = ({ title }) => {
               navigate('/');
             }}>
             <span className="flex items-center gap-2">
-              <BiSolidPlaneAlt />
+              <div className={`${title === 'flights' ? 'block' : 'hidden'}`}>
+                <BiSolidPlaneAlt />
+              </div>
               <p className="text-[12px] sm:text-sm">Flights</p>
               <IoChevronDownOutline className="block mobile:hidden" />
             </span>
@@ -55,7 +58,13 @@ const Navbar = ({ title }) => {
               setActiveTab('hotels');
               navigate('/hotel');
             }}>
-            Hotels
+            <span className="flex items-center gap-2">
+              <div className={`${title === 'hotels' ? 'block' : 'hidden'}`}>
+                <FaHotel />
+              </div>
+              <p className="text-[12px] sm:text-sm">Hotels</p>
+              <IoChevronDownOutline className="block mobile:hidden" />
+            </span>
           </button>
         </div>
         <div className="flex gap-6 text-sm items-center">
