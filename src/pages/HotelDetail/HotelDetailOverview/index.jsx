@@ -36,11 +36,19 @@ export const HotelDetailOverview = () => {
             <EllipsButton active={false} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <img src="assets/img/hoteldetails/2.png" alt="No find the image" />
-          <img src="assets/img/hoteldetails/3.png" alt="No find the image" />
-          <img src="assets/img/hoteldetails/4.png" alt="No find the image" />
-          <img src="assets/img/hoteldetails/5.png" alt="No find the image" />
+        <div className="flex gap-5 w-full">
+          <div className="w-full">
+            <img src="assets/img/hoteldetails/2.png" alt="No find the image" className="w-full" />
+          </div>
+          <div className="w-full">
+            <img src="assets/img/hoteldetails/3.png" alt="No find the image" className="w-full" />
+          </div>
+          <div className="w-full">
+            <img src="assets/img/hoteldetails/4.png" alt="No find the image" className="w-full" />
+          </div>
+          <div className="w-full">
+            <img src="assets/img/hoteldetails/5.png" alt="No find the image" className="w-full" />
+          </div>
         </div>
       </div>
     </div>

@@ -69,9 +69,12 @@ const SearchBar = () => {
                   name="trip"
                   value="return"
                   defaultChecked
+                  className="accent-black"
                   onClick={() => setSelectedTravelType({ name: 'Return', code: 'rt' })}
                 />
-                <label htmlFor="return" className="ml-2 text-white">
+                <label
+                  htmlFor="return"
+                  className={`ml-2  ${selectedTravelType.name === 'Return' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
                   Return
                 </label>
               </div>
@@ -81,11 +84,12 @@ const SearchBar = () => {
                   id="one-way"
                   name="trip"
                   value="one-way"
+                  className="accent-black"
                   onClick={() => setSelectedTravelType({ name: 'One Way', code: 'ow' })}
                 />
                 <label
                   htmlFor="one-way"
-                  className={`ml-2 ${selectedTravelType.name === 'One Way' ? 'text-white' : 'text-[#ffffff50]'}`}>
+                  className={`ml-2 ${selectedTravelType.name === 'One Way' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
                   One Way
                 </label>
               </div>
@@ -95,9 +99,12 @@ const SearchBar = () => {
                   id="multi-city"
                   name="trip"
                   value="multi-city"
+                  className="accent-black"
                   onClick={() => setSelectedTravelType({ name: 'Multi-City', code: 'mc' })}
                 />
-                <label htmlFor="multi-city" className="ml-2 text-white">
+                <label
+                  htmlFor="multi-city"
+                  className={`ml-2 ${selectedTravelType.name === 'Multi-City' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
                   Multi-City
                 </label>
               </div>
