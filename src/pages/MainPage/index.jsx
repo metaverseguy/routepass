@@ -14,7 +14,7 @@ const Main = () => {
   return (
     <div>
       <Navbar title="flights" />
-      <Header />
+      <Header pageTitle="main" />
       <LandingCarousel />
       <Support />
       <Guide imgURL="assets/img/guide.png" />

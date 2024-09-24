@@ -158,7 +158,7 @@ export default function searchFunc() {
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full"
+                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="Bali, (Denpasar) (DPS)"
                   />
                 </div>
@@ -168,7 +168,7 @@ export default function searchFunc() {
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full"
+                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="London Gatwick (LGW)"
                     />
                     <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center absolute lg:-top-[10px] lg:-left-[40px] md:-top-[10px] md:-left-[40px] -ml-4 md:ml-0 -top-[54px] left-[50%]">
@@ -194,7 +194,7 @@ export default function searchFunc() {
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full"
+                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="05/06/2024"
                     />
                   </div>
@@ -203,7 +203,7 @@ export default function searchFunc() {
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full"
+                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="07/06/2024"
                     />
                   </div>
@@ -213,7 +213,7 @@ export default function searchFunc() {
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full"
+                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="1Children, 1Adult"
                   />
                 </div>

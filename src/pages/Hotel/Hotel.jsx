@@ -14,7 +14,7 @@ const Hotel = () => {
   return (
     <div>
       <Navbar title="hotels" />
-      <Header />
+      <Header pageTitle="hotel" />
       <LandingCarousel />
       <Support />
       <Guide imgURL="assets/img/hotel_sub_background.png" />

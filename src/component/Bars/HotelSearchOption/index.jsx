@@ -105,7 +105,7 @@ export default function HotelSearchOption() {
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full"
+                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="Select your destination or Name"
                   />
                 </div>
@@ -117,7 +117,7 @@ export default function HotelSearchOption() {
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full"
+                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="04/06/2024"
                     />
                   </div>
@@ -126,7 +126,7 @@ export default function HotelSearchOption() {
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full"
+                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="05/06/2024"
                     />
                   </div>
@@ -136,7 +136,7 @@ export default function HotelSearchOption() {
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full"
+                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="2 Persons, 2 Rooms"
                   />
                 </div>
