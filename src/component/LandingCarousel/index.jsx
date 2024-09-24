@@ -13,9 +13,9 @@ export const LandingCarousel = () => {
   };
 
   return (
-    <div className="overflow-hidden flex">
+    <div className="overflow-hidden flex w-full">
       <Slider {...settings}>
-        <div>
+        <div className="w-full">
           <div className="relative bg-black h-[200px] sm:h-[347px] w-[350px] sm:w-[600px] flex items-center justify-center text-white m-10 overflow-hidden rounded-[20px]">
             <img
               src="assets/img/discount coupons.png"

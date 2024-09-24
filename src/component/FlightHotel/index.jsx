@@ -154,9 +154,9 @@ export const FlightHotel = () => {
           you save money while enjoying top-tier travel experiences
         </p>
       </div>
-      <div className="flex flex-col gap-8 py-[60px]">
-        <div className="flex flex-col lg:flex-row gap-4">
-          <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-col gap-8 py-[60px] w-full">
+        <div className="flex flex-col lg:flex-row gap-4 w-full">
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
             <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
               <HotelCard hotel={hotels[0]} />
             </div>
@@ -164,7 +164,7 @@ export const FlightHotel = () => {
               <HotelCard hotel={hotels[1]} />
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
             <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
               <HotelCard hotel={hotels[2]} />
             </div>
@@ -173,7 +173,7 @@ export const FlightHotel = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block w-full">
           <div className="flex gap-4">
             <div className="relative rounded-2xl overflow-hidden border basis-1/4">
               <HotelCard hotel={hotels[4]} />
@@ -198,9 +198,9 @@ export const FlightHotel = () => {
           you save money while enjoying top-tier travel experiences
         </p>
       </div>
-      <div className="flex flex-col gap-8 py-[60px]">
-        <div className="flex flex-col lg:flex-row gap-4">
-          <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-col gap-8 py-[60px] w-full">
+        <div className="flex flex-col lg:flex-row gap-4 w-full">
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
             <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
               <BestFlightDeal hotel={mostHotels[0]} />
             </div>
@@ -208,7 +208,7 @@ export const FlightHotel = () => {
               <BestFlightDeal hotel={mostHotels[1]} />
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
             <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
               <BestFlightDeal hotel={mostHotels[2]} />
             </div>

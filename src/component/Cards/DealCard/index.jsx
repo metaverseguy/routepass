@@ -8,7 +8,7 @@ export const DealCard = ({ city, country, price, startDate, endDate, airInfo, im
       <button className="bg-white absolute top-[16px] right-[28px] rounded-full w-8 h-8 text-[28px] flex items-center justify-center">
         <p className="p-0 m-[0] top-[-8px] absolute">+</p>
       </button>
-      <div className="px-5 py-7 flex flex-col gap-y-4">
+      <div className="px-5 py-7 flex flex-col gap-y-4 bg-white">
         <div className="flex justify-between">
           <div className="order-first">
             <p className="text-left text-lg font-bold">{city}</p>

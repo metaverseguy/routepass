@@ -12,7 +12,7 @@ const BestFlightDeal = ({ hotel }) => {
         <div className="flex items-stretch justify-between">
           <div className="flex flex-col gap-y-[5px]">
             <div className="flex flex-col gap-y-[10px]">
-              <h2 className="text-[12px] font-semibold text-[#333333]">{hotel.location}</h2>
+              <h2 className="text-[18px] font-semibold text-[#333333]">{hotel.location}</h2>
             </div>
             <p className="text-[#979797] text-[14px]">{hotel.country}</p>
           </div>

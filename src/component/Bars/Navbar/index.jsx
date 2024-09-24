@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import NotificationBanner from '../../NotificationBanner';
 import { TfiAlignJustify } from 'react-icons/tfi';
-import { GoTriangleDown } from 'react-icons/go';
 import { RiGlobalFill } from 'react-icons/ri';
 import { BiSolidPlaneAlt } from 'react-icons/bi';
 import { IoChevronDownOutline } from 'react-icons/io5';
@@ -71,8 +70,11 @@ const Navbar = ({ title }) => {
           <div className="relative hidden md:block">
             <button className="flex items-center">
               <RiGlobalFill color="white" />
-              <span>English</span>
-              <GoTriangleDown />
+              <select name="lang" id="lang" className="bg-eerieblack focus:outline-none text-sm">
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="german">German</option>
+              </select>
             </button>
           </div>
           <div className="hover:text-gray-400 hidden md:block">Bookmark</div>

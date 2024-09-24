@@ -2,7 +2,7 @@ import { DealCard } from '../Cards/DealCard';
 
 export const FlightDeals = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-14 px-5 sm:px-14 md:px-16 text-[#292929]">
+    <div className="flex flex-col items-center justify-center p-14 px-5 sm:px-14 md:px-16 text-[#292929] w-full">
       <div className="text-center max-w-[675px]">
         <p className="text-[28px] sm:text-[44px]">Best Flight Deals</p>
         <p className="text-[14px] sm:text-[18x]">
@@ -10,9 +10,9 @@ export const FlightDeals = () => {
           you save money while enjoying top-tier travel experiences
         </p>
       </div>
-      <div className="flex flex-col gap-8 py-[60px]">
-        <div className="flex flex-col lg:flex-row gap-4">
-          <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-col gap-8 py-[60px] w-full">
+        <div className="flex flex-col lg:flex-row gap-4 w-full">
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
             <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
               <DealCard
                 city="Florence"
@@ -36,7 +36,7 @@ export const FlightDeals = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
             <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/4">
               <DealCard
                 city="Tokyo"

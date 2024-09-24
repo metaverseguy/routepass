@@ -17,7 +17,7 @@ const Main = () => {
       <Header />
       <LandingCarousel />
       <Support />
-      <Guide imgURL="assets/img/sub_background.png" />
+      <Guide imgURL="assets/img/guide.png" />
       <FlightDeals />
       <Travllers />
       <Subscribe imgURL="assets/img/sub_background.png" />
