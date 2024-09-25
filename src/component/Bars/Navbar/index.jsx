@@ -45,7 +45,7 @@ const Navbar = ({ title }) => {
               <div className={`${title === 'flights' ? 'block' : 'hidden'}`}>
                 <BiSolidPlaneAlt />
               </div>
-              <p className="text-[12px] sm:text-sm">Flights</p>
+              <p className="text-[12px] sm:text-sm 2xl:text-[0.8vw]">Flights</p>
               <IoChevronDownOutline className="block mobile:hidden" />
             </span>
           </button>
@@ -61,7 +61,7 @@ const Navbar = ({ title }) => {
               <div className={`${title === 'hotels' ? 'block' : 'hidden'}`}>
                 <FaHotel />
               </div>
-              <p className="text-[12px] sm:text-sm">Hotels</p>
+              <p className="text-[12px] sm:text-sm 2xl:text-[0.8vw]">Hotels</p>
               <IoChevronDownOutline className="block mobile:hidden" />
             </span>
           </button>
@@ -70,14 +70,17 @@ const Navbar = ({ title }) => {
           <div className="relative hidden md:block">
             <button className="flex items-center">
               <RiGlobalFill color="white" />
-              <select name="lang" id="lang" className="bg-eerieblack focus:outline-none text-sm">
+              <select
+                name="lang"
+                id="lang"
+                className="bg-eerieblack focus:outline-none text-sm 2xl:text-[0.8vw]">
                 <option value="english">English</option>
                 <option value="spanish">Spanish</option>
                 <option value="german">German</option>
               </select>
             </button>
           </div>
-          <div className="hover:text-gray-400 hidden md:block">Bookmark</div>
+          <div className="hover:text-gray-400 hidden md:block 2xl:text-[0.8vw]">Bookmark</div>
           <div className="items-center sm:block hidden">
             <img src="assets/img/avatar.png" alt="Profile" className="w-8 h-8 rounded-full" />
           </div>

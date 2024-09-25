@@ -74,7 +74,7 @@ const SearchBar = () => {
                 />
                 <label
                   htmlFor="return"
-                  className={`ml-2  ${selectedTravelType.name === 'Return' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
+                  className={`ml-2 text-base 2xl:text-[0.8vw] ${selectedTravelType.name === 'Return' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
                   Return
                 </label>
               </div>
@@ -89,7 +89,7 @@ const SearchBar = () => {
                 />
                 <label
                   htmlFor="one-way"
-                  className={`ml-2 ${selectedTravelType.name === 'One Way' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
+                  className={`ml-2 text-base 2xl:text-[0.8vw] ${selectedTravelType.name === 'One Way' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
                   One Way
                 </label>
               </div>
@@ -104,7 +104,7 @@ const SearchBar = () => {
                 />
                 <label
                   htmlFor="multi-city"
-                  className={`ml-2 ${selectedTravelType.name === 'Multi-City' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
+                  className={`ml-2 text-base 2xl:text-[0.8vw] ${selectedTravelType.name === 'Multi-City' ? 'c-chromaphobicblack ' : 'c-chromaphobicblackhalf'}`}>
                   Multi-City
                 </label>
               </div>
@@ -112,7 +112,7 @@ const SearchBar = () => {
 
             <div className="flex justify-center bg-[#F5F5F5] rounded-[500px]">
               <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] ${
                   activeTab === 'economy'
                     ? 'bg-[#1E1E1E] text-white'
                     : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -121,7 +121,7 @@ const SearchBar = () => {
                 Economy
               </button>
               <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] ${
                   activeTab === 'bussiness'
                     ? 'bg-[#1E1E1E] text-white'
                     : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -130,7 +130,7 @@ const SearchBar = () => {
                 Bussiness
               </button>
               <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 ${
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] ${
                   activeTab === 'firstclass'
                     ? 'bg-[#1E1E1E] text-white'
                     : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -168,21 +168,21 @@ const SearchBar = () => {
             <div className="flex gap-[5px] 2xl:flex-row flex-col w-full items-stretch justify-center content-stretch">
               <div className="flex flex-col md:flex-row gap-[5px] basis-2/5">
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full basis-1/2">
-                  <p className="text-xs text-left text-[#29292950]">From</p>
+                  <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">From</p>
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                    className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="Bali, (Denpasar) (DPS)"
                   />
                 </div>
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] w-full basis-1/2">
-                  <p className="text-xs text-left text-[#29292950]">To</p>
+                  <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">To</p>
                   <div className="flex relative">
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="London Gatwick (LGW)"
                     />
                     <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center absolute lg:-top-[10px] lg:-left-[40px] md:-top-[10px] md:-left-[40px] -ml-4 md:ml-0 -top-[54px] left-[50%]">
@@ -204,30 +204,32 @@ const SearchBar = () => {
               <div className="flex gap-[5px] flex-col md:flex-row w-full basis-3/5">
                 <div className="flex gap-[5px] basis-2/3 w-full">
                   <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full">
-                    <p className="text-xs text-left text-[#29292950]">Depart</p>
+                    <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">Depart</p>
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="05/06/2024"
                     />
                   </div>
                   <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full">
-                    <p className="text-xs text-left text-[#29292950]">Return</p>
+                    <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">Return</p>
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="07/06/2024"
                     />
                   </div>
                 </div>
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full">
-                  <p className="text-xs text-left text-[#29292950]">Travellers</p>
+                  <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">
+                    Travellers
+                  </p>
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                    className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="1Children, 1Adult"
                   />
                 </div>
@@ -235,7 +237,7 @@ const SearchBar = () => {
             </div>
             <button
               onClick={() => navigate('/search')}
-              className="flex-1 text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
+              className="flex-1 text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center text-base 2xl:text-[0.9vw]">
               <BiSearch color="white" /> Search
             </button>
           </div>
@@ -280,23 +282,23 @@ const SearchBar = () => {
         <div className="flex gap-[15px]">
           <div className="flex flex-col md:flex-row gap-[15px]">
             <div className="flex gap-[15px]">
-              <p className="text-[#9f9f9f] text-xs">Popular Filters:</p>
+              <p className="text-[#9f9f9f] text-sm">Popular Filters:</p>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'recommended' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
                 }`}
                 onClick={() => setFilterItem('recommended')}>
                 Recommended
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'affordable' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
                 }`}
                 onClick={() => setFilterItem('affordable')}>
                 Most Affordable
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'bestreview' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
                 }`}
                 onClick={() => setFilterItem('bestreview')}>
@@ -305,7 +307,7 @@ const SearchBar = () => {
             </div>
             <div className="flex gap-[15px]">
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'nonstopflight' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
                 }`}
                 onClick={() => setFilterItem('nonstopflight')}>
@@ -313,14 +315,14 @@ const SearchBar = () => {
               </button>
 
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'shortestduration' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
                 }`}
                 onClick={() => setFilterItem('shortestduration')}>
                 Shortest Duration
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'flexibledate' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
                 }`}
                 onClick={() => setFilterItem('flexibledate')}>

@@ -148,8 +148,8 @@ export const FlightHotel = () => {
   return (
     <div className="flex flex-col items-center justify-center p-14 px-5 sm:px-14 md:px-16 text-[#292929]">
       <div className="text-center max-w-[675px]">
-        <p className="text-[28px] sm:text-[44px]">Best Flight Deals</p>
-        <p className="text-[14px] sm:text-[18x]">
+        <p className="text-[28px] sm:text-[44px] 2xl:text-[2.5vw]">Best Flight Deals</p>
+        <p className="text-[14px] sm:text-[18x] 2xl:text-[1vw]">
           Get unbeatable prices on flights to your favorite destinations. Our curated deals ensure
           you save money while enjoying top-tier travel experiences
         </p>
@@ -192,8 +192,8 @@ export const FlightHotel = () => {
       </div>
       <button className="px-7 py-4 bg-[#333333] rounded-[10px] text-white">See More</button>
       <div className="text-center max-w-[675px]">
-        <p className="text-[28px] sm:text-[44px]">Most Popular Cities</p>
-        <p className="text-[14px] sm:text-[18x]">
+        <p className="text-[28px] sm:text-[44px] 2xl:text-[2.5vw]">Most Popular Cities</p>
+        <p className="text-[14px] sm:text-[18x] 2xl:text-[1vw]">
           Get unbeatable prices on flights to your favorite destinations. Our curated deals ensure
           you save money while enjoying top-tier travel experiences
         </p>

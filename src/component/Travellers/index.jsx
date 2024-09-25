@@ -17,8 +17,10 @@ export const Travllers = () => {
   return (
     <div className="text-[#292929] flex flex-col justify-center text-center gap-6">
       <div className="flex flex-col justify-center items-center gap-3 max-w-[675px] m-auto">
-        <p className="text-[28px] sm:text-[44px] font-semibold">Let’s Hear From Our Travellers</p>
-        <p className="text-[14px] sm:text-[18px] text-center">
+        <p className="text-[28px] sm:text-[44px] 2xl:text-[2.5vw] font-semibold">
+          Let’s Hear From Our Travellers
+        </p>
+        <p className="text-[14px] sm:text-[18px] 2xl:text-[1vw] text-center">
           Discover How Our Platform Has Made Travel Easier and More Affordable for Thousands of
           Satisfied Customers
         </p>

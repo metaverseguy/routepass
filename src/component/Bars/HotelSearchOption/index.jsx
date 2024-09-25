@@ -44,7 +44,7 @@ export default function HotelSearchOption() {
                   />
                   <label
                     htmlFor="return"
-                    className={`text-nowrap ${selectedTravelType.name === 'Hotel' ? 'text-white' : 'text-[#ffffff50]'}`}>
+                    className={`text-nowrap 2xl:text-[0.8vw] ${selectedTravelType.name === 'Hotel' ? 'text-white' : 'text-[#ffffff50]'}`}>
                     Hotel
                   </label>
                 </div>
@@ -59,7 +59,7 @@ export default function HotelSearchOption() {
                   />
                   <label
                     htmlFor="one-way"
-                    className={`text-nowrap ${selectedTravelType.name === 'Villa' ? 'text-white' : 'text-[#ffffff50]'}`}>
+                    className={`text-nowrap 2xl:text-[0.8vw] ${selectedTravelType.name === 'Villa' ? 'text-white' : 'text-[#ffffff50]'}`}>
                     Villa
                   </label>
                 </div>
@@ -74,7 +74,7 @@ export default function HotelSearchOption() {
                   />
                   <label
                     htmlFor="multi-city"
-                    className={`text-nowrap ${selectedTravelType.name === 'Resort' ? 'text-white' : 'text-[#ffffff50]'}`}>
+                    className={`text-nowrap 2xl:text-[0.8vw] ${selectedTravelType.name === 'Resort' ? 'text-white' : 'text-[#ffffff50]'}`}>
                     Resort
                   </label>
                 </div>
@@ -89,7 +89,7 @@ export default function HotelSearchOption() {
                   />
                   <label
                     htmlFor="multi-city"
-                    className={`text-nowrap ${selectedTravelType.name === 'Residence' ? 'text-white' : 'text-[#ffffff50]'}`}>
+                    className={`text-nowrap 2xl:text-[0.8vw] ${selectedTravelType.name === 'Residence' ? 'text-white' : 'text-[#ffffff50]'}`}>
                     Residence
                   </label>
                 </div>
@@ -100,43 +100,45 @@ export default function HotelSearchOption() {
           <div className="flex flex-col 2xl:flex-row mb-5 gap-[10px]">
             <div className="flex gap-[10px] 2xl:flex-row flex-col w-full items-stretch justify-center content-stretch">
               <div className="flex flex-col md:flex-row gap-[10px] basis-2/5">
-                <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full">
-                  <p className="text-xs text-left text-[#29292950]">Where to?</p>
+                <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full flex flex-col gap-y-2">
+                  <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">Where to?</p>
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                    className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="Select your destination or Name"
                   />
                 </div>
               </div>
               <div className="flex gap-[10px] flex-col md:flex-row w-full basis-3/5">
                 <div className="flex gap-[10px] basis-2/3 w-full">
-                  <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full">
-                    <p className="text-xs text-left text-[#29292950]">Check In</p>
+                  <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col gap-y-2">
+                    <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">Check In</p>
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="04/06/2024"
                     />
                   </div>
-                  <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full">
-                    <p className="text-xs text-left text-[#29292950]">Check Out</p>
+                  <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full  flex flex-col gap-y-2">
+                    <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">Check Out</p>
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="05/06/2024"
                     />
                   </div>
                 </div>
-                <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full">
-                  <p className="text-xs text-left text-[#29292950]">Guests & Rooms</p>
+                <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full flex flex-col gap-y-2">
+                  <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">
+                    Guests & Rooms
+                  </p>
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                    className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="2 Persons, 2 Rooms"
                   />
                 </div>
@@ -144,37 +146,37 @@ export default function HotelSearchOption() {
             </div>
             <button
               onClick={() => navigate('/search')}
-              className="flex-1 text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
+              className="flex-1 2xl:text-[0.9vw] text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
               <BiSearch color="white" /> Search
             </button>
           </div>
 
           <div className="flex flex-col md:flex-row gap-[15px]">
             <div className="flex flex-wrap gap-[15px]">
-              <p className="text-[#9f9f9f] text-xs">Popular Filters:</p>
+              <p className="text-[#9f9f9f] text-xs 2xl:text-[0.7vw]">Popular Filters:</p>
               <button
-                className={`text-xs rounded ${
+                className={`text-xs 2xl:text-[0.7vw] rounded ${
                   filterItem === 'recommended' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('recommended')}>
                 Recommended
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-xs 2xl:text-[0.7vw] rounded ${
                   filterItem === 'airport' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('airport')}>
                 Closest to the Airport
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-xs 2xl:text-[0.7vw] rounded ${
                   filterItem === 'bestreview' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('bestreview')}>
                 Best Review
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-xs 2xl:text-[0.7vw] rounded ${
                   filterItem === 'swimming' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('swimming')}>
@@ -182,14 +184,14 @@ export default function HotelSearchOption() {
               </button>
 
               <button
-                className={`text-xs rounded ${
+                className={`text-xs 2xl:text-[0.7vw] rounded ${
                   filterItem === 'fivestar' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('fivestar')}>
                 Five Star Only Hotels
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-xs 2xl:text-[0.7vw] rounded ${
                   filterItem === 'threestars' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('threestars')}>

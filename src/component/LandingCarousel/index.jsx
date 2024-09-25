@@ -29,7 +29,7 @@ export const LandingCarousel = () => {
               <button className="bg-[#2a2a2a] text-[9px] sm:text-[16px] text-white px-[22px] sm:px-[40px] py-[10px] sm:py-[18px] mb-[11px] sm:mb-5 rounded-[4px]">
                 Get Discount 30%
               </button>
-              <p className="text-[6px] sm:text-[12px]">
+              <p className="text-[10px] sm:text-[14px]">
                 Get this before 24 Aug 2024 Terms & Condition applied
               </p>
             </div>
@@ -49,7 +49,7 @@ export const LandingCarousel = () => {
               <button className="bg-[#2a2a2a] text-[9px] sm:text-[16px] text-white px-[22px] sm:px-[40px] py-[10px] sm:py-[18px] mb-[11px] sm:mb-5 rounded-[4px]">
                 Get Discount 30%
               </button>
-              <p className="text-[6px] sm:text-[12px]">
+              <p className="text-[10px] sm:text-[14px]">
                 Get this before 24 Aug 2024 Terms & Condition applied
               </p>
             </div>
@@ -69,7 +69,7 @@ export const LandingCarousel = () => {
               <button className="bg-[#2a2a2a] text-[9px] sm:text-[16px] text-white px-[22px] sm:px-[40px] py-[10px] sm:py-[18px] mb-[11px] sm:mb-5 rounded-[4px]">
                 Get Discount 30%
               </button>
-              <p className="text-[6px] sm:text-[12px]">
+              <p className="text-[10px] sm:text-[14px]">
                 Get this before 24 Aug 2024 Terms & Condition applied
               </p>
             </div>

@@ -11,8 +11,8 @@ export const DealCard = ({ city, country, price, startDate, endDate, airInfo, im
       <div className="px-5 py-7 flex flex-col gap-y-4 bg-white">
         <div className="flex justify-between">
           <div className="order-first">
-            <p className="text-left text-lg font-bold">{city}</p>
-            <p className="text-left text-sm">{country}</p>
+            <p className="text-left text-[20px] font-bold">{city}</p>
+            <p className="text-left text-base font-medium">{country}</p>
           </div>
           <div className="order-last self-center">
             <p className="text-lg font-bold">{price}</p>
@@ -23,20 +23,20 @@ export const DealCard = ({ city, country, price, startDate, endDate, airInfo, im
             <EmirateSVG />
           </div>
           <div className="px-[10px] flex-grow">
-            <p className="text-xs text-left">{startDate}</p>
-            <p className="text-[10px] text-[#979797] text-left">{airInfo}</p>
+            <p className="text-base text-left">{startDate}</p>
+            <p className="text-sm text-[#979797] text-left">{airInfo}</p>
           </div>
-          <p className="text-right text-[10px] font-bold">Direct</p>
+          <p className="text-right text-[16px] font-bold">Direct</p>
         </div>
         <div className="flex items-center justify-between">
           <div className="w-10 h-10 rounded-full bg-[#d72027] flex justify-center items-center">
             <EmirateSVG />
           </div>
           <div className="px-[10px] flex-grow">
-            <p className="text-xs text-left">{endDate}</p>
-            <p className="text-[10px] text-[#979797] text-left">{airInfo}</p>
+            <p className="text-base text-left">{endDate}</p>
+            <p className="text-sm text-[#979797] text-left">{airInfo}</p>
           </div>
-          <p className="text-right text-[10px] font-bold">Direct</p>
+          <p className="text-right text-[16px] font-bold">Direct</p>
         </div>
       </div>
     </>

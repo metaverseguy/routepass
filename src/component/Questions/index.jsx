@@ -6,10 +6,10 @@ export const Questions = () => {
   return (
     <div className="mx-[20px] sm:mx-[60px] mb-[80px] px-[20px] sm:px-[40px] xl:px-[240px] py-[40px] sm:py-[80px] bg-white rounded-[20px]">
       <div className="pb-[60px] text-center">
-        <p className="text-[#292929] text-[28px] sm:text-[44px] font-semibold">
+        <p className="text-[#292929] text-[28px] sm:text-[44px] 2xl:text-[2.5vw] font-semibold">
           Frequently Asked Questions
         </p>
-        <p className="text-[#29292950] text-[14px] sm:text-[18px]">
+        <p className="text-[#29292950] text-[14px] sm:text-[18px] 2xl:text-[1vw]">
           Expert Tips and Guidance for Every Journey with RoutePass
         </p>
       </div>

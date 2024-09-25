@@ -122,10 +122,12 @@ export const FilterSearchResult = () => {
             </div>
           </div>
           <div className="flex px-5 py-3 bg-white shadow justify-between rounded-[5px] sm:rounded-[10px]">
-            <span className="text-[#29292950] text-[8px] sm:text-sm">1820 Flights Found</span>
+            <span className="text-[#29292950] text-[8px] sm:text-sm 2xl:text-[0.9vw]">
+              1820 Flights Found
+            </span>
             <div className="flex items-center">
               <AiOutlineExclamationCircle color="#1e1e1e" />
-              <span className="text-[#1e1e1e] text-[8px] sm:text-sm">
+              <span className="text-[#1e1e1e] text-[8px] sm:text-sm 2xl:text-[0.9vw]">
                 Additional Bag Fees May Apply
               </span>
             </div>
@@ -133,32 +135,45 @@ export const FilterSearchResult = () => {
           <div className="hidden md:block">
             <div className="flex items-center justify-between bg-white px-5 py-[17px] rounded-lg shadow">
               <div className="flex flex-col">
-                <p className="font-semibold text-[20px] text-[#292929]">Cheapest</p>
+                <p className="font-semibold text-[20px] 2xl:text-[1.1vw] text-[#292929]">
+                  Cheapest
+                </p>
                 <div className="flex">
-                  <p className="text-[#292929] font-semibold text-[18px]">$200</p>
-                  <p className="text-[#29292950] font-semibold text-[18px]"> - 1h 06m</p>
+                  <p className="text-[#292929] 2xl:text-[0.9vw] font-semibold text-[18px]">$200</p>
+                  <p className="text-[#29292950] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    {' '}
+                    - 1h 06m
+                  </p>
                 </div>
               </div>
               <div className="border-[2.5px] border-[#29292950] h-8 mx-4"></div>
               <div className="flex flex-col">
-                <p className="font-semibold text-[20px] text-[#292929]">Best</p>
+                <p className="font-semibold text-[20px] 2xl:text-[1.1vw] text-[#292929]">Best</p>
                 <div className="flex">
-                  <p className="text-[#292929] font-semibold text-[18px]">$200</p>
-                  <p className="text-[#29292950] font-semibold text-[18px]"> - 1h 06m</p>
+                  <p className="text-[#292929] 2xl:text-[0.9vw] font-semibold text-[18px]">$200</p>
+                  <p className="text-[#29292950] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    {' '}
+                    - 1h 06m
+                  </p>
                 </div>
               </div>
               <div className="border-[2.5px] border-[#29292950] h-8 mx-4"></div>
               <div className="flex flex-col">
-                <p className="font-semibold text-[20px] text-[#292929]">Quickest</p>
+                <p className="font-semibold text-[20px] 2xl:text-[1.1vw] text-[#292929]">
+                  Quickest
+                </p>
                 <div className="flex">
-                  <p className="text-[#292929] font-semibold text-[18px]">$200</p>
-                  <p className="text-[#29292950] font-semibold text-[18px]"> - 1h 06m</p>
+                  <p className="text-[#292929] 2xl:text-[0.9vw] font-semibold text-[18px]">$200</p>
+                  <p className="text-[#29292950] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    {' '}
+                    - 1h 06m
+                  </p>
                 </div>
               </div>
               <div className="border-[2.5px] border-[#29292950] h-8 mx-4"></div>
               <div className="flex items-center justify-center">
                 <TbAlignCenter color="#29292950" />
-                <span className="text-[#29292950] text-[16px]">Other Sort</span>
+                <span className="text-[#29292950] text-[16px] 2xl:text-[0.9vw]">Other Sort</span>
               </div>
             </div>
           </div>

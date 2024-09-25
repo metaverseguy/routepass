@@ -31,18 +31,22 @@ export default function searchFunc() {
       <div className="w-[90%] flex flex-col gap-y-5 sm:gap-y-10">
         <div className="flex justify-center p-6 bg-[#1E1E1E] rounded-[9px]">
           <div className="flex flex-wrap items-center justify-center text-white rounded-lg w-4/5 gap-[5px]">
-            <span className="font-semibold text-[10px] sm:text-[12px] flex items-center gap-[5px] text-nowrap">
+            <span className="font-semibold text-[10px] sm:text-[12px] 2xl:text-[0.8vw] flex items-center gap-[5px] text-nowrap">
               <IoIosSearch />
               Bali, (Denpasar) (DPS) - London Gatwick (LGW)
             </span>
-            <span className="font-semibold text-[10px] sm:text-[12px]">•</span>
-            <span className="font-semibold text-[10px] sm:text-[12px]">
+            <span className="font-semibold text-[10px] sm:text-[12px] 2xl:text-[0.8vw]">•</span>
+            <span className="font-semibold text-[10px] sm:text-[12px] 2xl:text-[0.8vw]">
               Mon, 05 Jun - Wed, 07 Jun
             </span>
-            <span className="font-semibold text-[10px] sm:text-[12px]">•</span>
-            <span className="font-semibold text-[10px] sm:text-[12px]">1 Children, 1 Adult</span>
-            <span className="font-semibold text-[10px] sm:text-[12px]">•</span>
-            <span className="font-semibold text-[10px] sm:text-[12px]">Business</span>
+            <span className="font-semibold text-[10px] sm:text-[12px] 2xl:text-[0.8vw]">•</span>
+            <span className="font-semibold text-[10px] sm:text-[12px] 2xl:text-[0.8vw]">
+              1 Children, 1 Adult
+            </span>
+            <span className="font-semibold text-[10px] sm:text-[12px] 2xl:text-[0.8vw]">•</span>
+            <span className="font-semibold text-[10px] sm:text-[12px] 2xl:text-[0.8vw]">
+              Business
+            </span>
           </div>
         </div>
         <div className="flex flex-col gap-y-[10px]">
@@ -61,7 +65,7 @@ export default function searchFunc() {
                   />
                   <label
                     htmlFor="return"
-                    className={`text-nowrap ${selectedTravelType.name === 'Return' ? 'text-white' : 'text-[#ffffff50]'}`}>
+                    className={`text-nowrap 2xl:text-[0.8vw] ${selectedTravelType.name === 'Return' ? 'text-white' : 'text-[#ffffff50]'}`}>
                     Return
                   </label>
                 </div>
@@ -76,7 +80,7 @@ export default function searchFunc() {
                   />
                   <label
                     htmlFor="one-way"
-                    className={`text-nowrap ${selectedTravelType.name === 'One Way' ? 'text-white' : 'text-[#ffffff50]'}`}>
+                    className={`text-nowrap 2xl:text-[0.8vw] ${selectedTravelType.name === 'One Way' ? 'text-white' : 'text-[#ffffff50]'}`}>
                     One Way
                   </label>
                 </div>
@@ -91,7 +95,7 @@ export default function searchFunc() {
                   />
                   <label
                     htmlFor="multi-city"
-                    className={`text-nowrap ${selectedTravelType.name === 'Multi-City' ? 'text-white' : 'text-[#ffffff50]'}`}>
+                    className={`text-nowrap 2xl:text-[0.8vw] ${selectedTravelType.name === 'Multi-City' ? 'text-white' : 'text-[#ffffff50]'}`}>
                     Multi-City
                   </label>
                 </div>
@@ -99,7 +103,7 @@ export default function searchFunc() {
 
               <div className="flex justify-center bg-[#F5F5F5] rounded-[500px]">
                 <button
-                  className={`px-[30px] py-[3px] text-sm md:text-base rounded-[500px] transition-colors duration-300 ${
+                  className={`px-[30px] py-[3px] text-sm md:text-base rounded-[500px] transition-colors duration-300 2xl:text-[0.9vw] ${
                     activeTab === 'economy'
                       ? 'bg-[#1E1E1E] text-white'
                       : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -108,7 +112,7 @@ export default function searchFunc() {
                   Economy
                 </button>
                 <button
-                  className={`px-[30px] py-[3px] text-sm md:text-base rounded-[500px] transition-colors duration-300 ${
+                  className={`px-[30px] py-[3px] text-sm md:text-base rounded-[500px] transition-colors duration-300 2xl:text-[0.9vw] ${
                     activeTab === 'bussiness'
                       ? 'bg-[#1E1E1E] text-white'
                       : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -117,7 +121,7 @@ export default function searchFunc() {
                   Bussiness
                 </button>
                 <button
-                  className={`px-[30px] py-[3px] text-sm md:text-base rounded-[500px] text-nowrap transition-colors duration-300 ${
+                  className={`px-[30px] py-[3px] text-sm md:text-base rounded-[500px] text-nowrap transition-colors duration-300 2xl:text-[0.9vw] ${
                     activeTab === 'firstclass'
                       ? 'bg-[#1E1E1E] text-white'
                       : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -154,21 +158,21 @@ export default function searchFunc() {
             <div className="flex gap-[10px] 2xl:flex-row flex-col w-full items-stretch justify-center content-stretch">
               <div className="flex flex-col md:flex-row gap-[10px] basis-2/5">
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full basis-1/2">
-                  <p className="text-xs text-left text-[#29292950]">From</p>
+                  <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">From</p>
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                    className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="Bali, (Denpasar) (DPS)"
                   />
                 </div>
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] w-full basis-1/2">
-                  <p className="text-xs text-left text-[#29292950]">To</p>
+                  <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">To</p>
                   <div className="flex relative">
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="London Gatwick (LGW)"
                     />
                     <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center absolute lg:-top-[10px] lg:-left-[40px] md:-top-[10px] md:-left-[40px] -ml-4 md:ml-0 -top-[54px] left-[50%]">
@@ -190,30 +194,30 @@ export default function searchFunc() {
               <div className="flex gap-[10px] flex-col md:flex-row w-full basis-3/5">
                 <div className="flex gap-[10px] basis-2/3 w-full">
                   <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full">
-                    <p className="text-xs text-left text-[#29292950]">Depart</p>
+                    <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">Depart</p>
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="05/06/2024"
                     />
                   </div>
                   <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full">
-                    <p className="text-xs text-left text-[#29292950]">Return</p>
+                    <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">Return</p>
                     <input
                       type="text"
                       placeholder="From"
-                      className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                       defaultValue="07/06/2024"
                     />
                   </div>
                 </div>
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full">
-                  <p className="text-xs text-left text-[#29292950]">Travellers</p>
+                  <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">Travellers</p>
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-xs bg-gray-100 text-[#292929] w-full focus:outline-none"
+                    className="text-xs 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="1Children, 1Adult"
                   />
                 </div>
@@ -221,37 +225,37 @@ export default function searchFunc() {
             </div>
             <button
               onClick={() => navigate('/search')}
-              className="flex-1 text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
+              className="flex-1 text-white 2xl:text-[0.9vw] md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
               <BiSearch color="white" /> Search
             </button>
           </div>
 
           <div className="flex flex-col md:flex-row gap-[15px]">
             <div className="flex flex-wrap gap-[15px]">
-              <p className="text-[#9f9f9f] text-xs">Popular Filters:</p>
+              <p className="text-[#9f9f9f] text-sm">Popular Filters:</p>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'recommended' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('recommended')}>
                 Recommended
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'affordable' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('affordable')}>
                 Most Affordable
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'bestreview' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('bestreview')}>
                 Best Review
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'nonstopflight' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('nonstopflight')}>
@@ -259,7 +263,7 @@ export default function searchFunc() {
               </button>
 
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'shortestduration'
                     ? 'text-[#ffffff] underline'
                     : 'text-[#ffffff50]'
@@ -268,7 +272,7 @@ export default function searchFunc() {
                 Shortest Duration
               </button>
               <button
-                className={`text-xs rounded ${
+                className={`text-sm rounded ${
                   filterItem === 'flexibledate' ? 'text-[#ffffff] underline' : 'text-[#ffffff50]'
                 }`}
                 onClick={() => setFilterItem('flexibledate')}>
