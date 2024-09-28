@@ -7,14 +7,16 @@ import HotelSearchBar from '../HotelSearchBar';
 
 const Header = ({ pageTitle }) => {
   return (
-    <div className="relative">
+    <div className="relative flex flex-col justify-center items-center z-0">
       <img
         className="w-full object-cover h-[585px] md:h-[449px] flex justify-center z-0"
         src="assets/img/painting-3995999_1920.jpg"
         alt="No find the image"
       />
-      {pageTitle === 'main' ? <SearchBar /> : null}
-      {pageTitle === 'hotel' ? <HotelSearchBar /> : null}
+      <div className="flex flex-col justify-center items-center max-w-[1800px]">
+        {pageTitle === 'main' ? <SearchBar /> : null}
+        {pageTitle === 'hotel' ? <HotelSearchBar /> : null}
+      </div>
     </div>
   );
 };

@@ -254,7 +254,7 @@ const HotelSearchBar = () => {
           </div>
         ) : null}
 
-        <div className="flex flex-col md:flex-row gap-[15px]">
+        <div className="flex flex-col md:flex-row gap-[15px] w-full">
           <div className="flex flex-wrap gap-[15px]">
             <p className="text-[#9f9f9f] text-sm 2xl:text-[0.7vw]">Popular Filters:</p>
             <button

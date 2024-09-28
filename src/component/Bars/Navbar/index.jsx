@@ -13,9 +13,9 @@ const Navbar = ({ title }) => {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className="relative z-50 bg-[#1E1E1E] flex flex-col justify-center items-center">
       <NotificationBanner />
-      <nav className="relative bg-[#1E1E1E] text-white flex items-center justify-between p-4 w-full z-20">
+      <nav className="text-white flex items-center justify-between p-4 w-full max-w-[1440px]">
         <div className="flex items-center gap-1">
           <svg
             width="23"
@@ -89,7 +89,7 @@ const Navbar = ({ title }) => {
           </button>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
