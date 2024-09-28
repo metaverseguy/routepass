@@ -54,7 +54,7 @@ export const Footer = () => {
             <p>Do Not Sell or Share My Personal Information</p>
           </div>
           <div className="flex flex-col gap-y-2">
-            <FilterAccordion title="Explore" props="!bg-[#2b2b2b] text-white !text-sm">
+            <FilterAccordion title="Explore" props="!bg-[#1e1e1e] text-white !text-sm">
               <div className="ml-5 py-5 gap-[15px] border-b border-[#29292950] flex flex-col gap-y-[15px]">
                 <p>Domestic flights</p>
                 <p>Cities +</p>
@@ -69,7 +69,7 @@ export const Footer = () => {
                 <p>Sitemap</p>
               </div>
             </FilterAccordion>
-            <FilterAccordion title="Company" props="!bg-[#2b2b2b] text-white !text-sm">
+            <FilterAccordion title="Company" props="!bg-[#1e1e1e] text-white !text-sm">
               <div className="ml-5 py-5 gap-[15px] border-b border-[#29292950] flex flex-col gap-y-[15px]">
                 <p>About us</p>
                 <p>Why Routepass?</p>
@@ -82,7 +82,7 @@ export const Footer = () => {
                 <p>Security</p>
               </div>
             </FilterAccordion>
-            <FilterAccordion title="Partners" props="!bg-[#2b2b2b] text-white !text-sm">
+            <FilterAccordion title="Partners" props="!bg-[#1e1e1e] text-white !text-sm">
               <div className="ml-5 py-5 gap-[15px] border-b border-[#29292950] flex flex-col gap-y-[15px]">
                 <p>Work with us</p>
                 <p>Advertise with us</p>
@@ -91,14 +91,14 @@ export const Footer = () => {
                 <p>Travel APIs</p>
               </div>
             </FilterAccordion>
-            <FilterAccordion title="Trips" props="!bg-[#2b2b2b] text-white !text-sm">
+            <FilterAccordion title="Trips" props="!bg-[#1e1e1e] text-white !text-sm">
               <div className="ml-5 py-5 gap-[15px] border-b border-[#29292950] flex flex-col gap-y-[15px]">
                 <p>Flights +</p>
                 <p>Hotels Deals in Popular Cities +</p>
                 <p>Car rental +</p>
               </div>
             </FilterAccordion>
-            <FilterAccordion title="International Sites" props="!bg-[#2b2b2b] text-white !text-sm">
+            <FilterAccordion title="International Sites" props="!bg-[#1e1e1e] text-white !text-sm">
               <div className="ml-5 py-5 gap-[15px] border-b border-[#29292950] flex flex-col gap-y-[15px]">
                 <p>(AU) Australia-Cheap flights</p>
                 <p>(BR) Brasil - passagens aéreas</p>
