@@ -177,7 +177,7 @@ export const HotelFilterSearchResult = () => {
                   imgURL="assets/img/bali.png"
                 />
               </div>
-              <div className="flex-1 relative rounded-2xl overflow-hidden border basis-1/3">
+              <div className="hidden lg:block flex-1 relative rounded-2xl overflow-hidden border basis-1/3">
                 <DealCard
                   city="Bali"
                   country="Indonesia"

@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BiSearch } from 'react-icons/bi';
 import { IoIosSearch } from 'react-icons/io';
+import { Dropdown } from 'primereact/dropdown';
 import 'primereact/resources/themes/lara-light-cyan/theme.css';
 
 export default function HotelSearchOption() {
   const navigate = useNavigate();
   const [filterItem, setFilterItem] = useState('recommended');
   const [selectedTravelType, setSelectedTravelType] = useState({ name: 'Hotel', code: 'ht' });
+
+  const travelType = [
+    { name: 'Return', code: 'rt' },
+    { name: 'One Way', code: 'ow' },
+    { name: 'Multi-City', code: 'mc' },
+  ];
 
   return (
     <div className="bg-[#2B2B2B] p-6 shadow-lg flex justify-center">
@@ -94,6 +101,19 @@ export default function HotelSearchOption() {
                   </label>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="block md:hidden w-full">
+            <div className="flex justify-center items-stretch gap-[10px]">
+              <Dropdown
+                variant="filled"
+                value={selectedTravelType}
+                onChange={(e) => setSelectedTravelType(e.value)}
+                options={travelType}
+                optionLabel="name"
+                className="w-full bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm"
+              />
             </div>
           </div>
 
