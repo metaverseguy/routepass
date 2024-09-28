@@ -1,3 +1,4 @@
+// HotelFilterSearchResult
 import { AiOutlineExclamationCircle } from 'react-icons/ai';
 import { TbAlignCenter } from 'react-icons/tb';
 import { DealCard } from '../Cards/DealCard';
