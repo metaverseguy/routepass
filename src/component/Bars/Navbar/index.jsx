@@ -5,13 +5,24 @@ import NotificationBanner from '../../NotificationBanner';
 import { TfiAlignJustify } from 'react-icons/tfi';
 import { RiGlobalFill } from 'react-icons/ri';
 import { BiSolidPlaneAlt } from 'react-icons/bi';
+import { FaHotel, FaPlane } from 'react-icons/fa6';
 import { IoChevronDownOutline } from 'react-icons/io5';
-import { FaHotel } from 'react-icons/fa6';
 
 const Navbar = ({ title }) => {
   const [activeTab, setActiveTab] = useState(title);
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false); // To control dropdown open/close
 
+  const handleSelect = (option) => {
+    setIsOpen(false);
+    if (option === 'flight') {
+      setActiveTab('flights');
+      navigate('/');
+    } else if (option === 'hotel') {
+      setActiveTab('hotels');
+      navigate('/hotel');
+    }
+  };
   return (
     <div className="relative z-50 bg-[#1E1E1E] flex flex-col justify-center items-center">
       <NotificationBanner />
@@ -32,7 +43,7 @@ const Navbar = ({ title }) => {
             RoutePass
           </a>
         </div>
-        <div className="flex">
+        <div className="hidden md:flex">
           <button
             className={`px-4 py-2 rounded-full ${
               activeTab === 'flights' ? 'bg-gray-800 text-white' : 'text-gray-400'
@@ -46,11 +57,10 @@ const Navbar = ({ title }) => {
                 <BiSolidPlaneAlt />
               </div>
               <p className="text-[12px] sm:text-sm 2xl:text-[0.8vw]">Flights</p>
-              <IoChevronDownOutline className="block mobile:hidden" />
             </span>
           </button>
           <button
-            className={`px-4 py-2 hidden text-[12px] sm:text-sm sm:block rounded-full ${
+            className={`px-4 py-2 text-[12px] sm:text-sm rounded-full ${
               activeTab === 'hotels' ? 'bg-gray-800 text-white' : 'text-gray-400'
             }`}
             onClick={() => {
@@ -62,11 +72,54 @@ const Navbar = ({ title }) => {
                 <FaHotel />
               </div>
               <p className="text-[12px] sm:text-sm 2xl:text-[0.8vw]">Hotels</p>
-              <IoChevronDownOutline className="block mobile:hidden" />
             </span>
           </button>
         </div>
+
         <div className="flex gap-6 text-sm items-center">
+          <div className="relative inline-block text-left md:hidden">
+            <div className="flex">
+              <button
+                type="button"
+                className="inline-flex gap-1 justify-between items-center w-full px-4 py-2 bg-[#2B2B2B] text-sm font-medium text-white rounded-[50px]"
+                onClick={() => setIsOpen(!isOpen)} // Toggle dropdown
+              >
+                {activeTab === 'flights' ? (
+                  <>
+                    <FaPlane className="mr-2" /> Flight
+                  </>
+                ) : (
+                  <>
+                    <FaHotel className="mr-2" /> Hotel
+                  </>
+                )}
+                <IoChevronDownOutline />
+              </button>
+            </div>
+
+            {isOpen && (
+              <div className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-gray-800 text-white">
+                <div
+                  className="py-1"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="options-menu">
+                  <button
+                    onClick={() => handleSelect('flight')}
+                    className="flex items-center px-4 py-2 text-sm text-white hover:bg-gray-100 w-full"
+                    role="menuitem">
+                    <FaPlane className="mr-2" /> Flight
+                  </button>
+                  <button
+                    onClick={() => handleSelect('hotel')}
+                    className="flex items-center px-4 py-2 text-sm text-white hover:bg-gray-100 w-full"
+                    role="menuitem">
+                    <FaHotel className="mr-2" /> Hotel
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
           <div className="relative hidden md:block">
             <button className="flex items-center">
               <RiGlobalFill color="white" />
