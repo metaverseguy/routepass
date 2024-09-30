@@ -127,7 +127,7 @@ const SearchBar = () => {
                     : 'bg-[#F5F5F5] text-[#1E1E1E]'
                 }`}
                 onClick={() => setActiveTab('bussiness')}>
-                Bussiness
+                Business
               </button>
               <button
                 className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] ${

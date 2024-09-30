@@ -157,7 +157,7 @@ export default function HotelSearchOption() {
                     </div>
                   </div>
                   <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full flex flex-col gap-y-2">
-                    <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950]">
+                    <p className="text-xs 2xl:text-[0.9vw] text-left text-[#29292950] text-nowrap">
                       Guests & Rooms
                     </p>
                     <input

@@ -142,7 +142,7 @@ const HotelSearchBar = () => {
                     : 'bg-[#F5F5F5] text-[#1E1E1E]'
                 }`}
                 onClick={() => setActiveTab('bussiness')}>
-                Bussiness
+                Business
               </button>
               <button
                 className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] ${
@@ -178,10 +178,10 @@ const HotelSearchBar = () => {
           </div>
         </div>
 
-        <div className="flex flex-col 2xl:flex-row mb-5 gap-[10px]">
-          <div className="flex gap-[10px] 2xl:flex-row flex-col w-full items-stretch justify-center content-stretch">
+        <div className="flex flex-col 2xl:flex-row mb-5 gap-[10px] w-full">
+          <div className="flex gap-[10px] 2xl:flex-row flex-col w-full items-stretch justify-center">
             <div className="flex flex-col md:flex-row gap-[10px] basis-2/5">
-              <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full flex flex-col gap-y-2">
+              <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full flex flex-col">
                 <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">Where to?</p>
                 <input
                   type="text"
@@ -193,7 +193,7 @@ const HotelSearchBar = () => {
             </div>
             <div className="flex gap-[10px] flex-col md:flex-row w-full basis-3/5">
               <div className="flex gap-[10px] basis-2/3 w-full">
-                <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col gap-y-2">
+                <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col">
                   <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">Check In</p>
                   <input
                     type="text"
@@ -202,7 +202,7 @@ const HotelSearchBar = () => {
                     defaultValue="04/06/2024"
                   />
                 </div>
-                <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col gap-y-2">
+                <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col">
                   <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">Check Out</p>
                   <input
                     type="text"
@@ -212,7 +212,7 @@ const HotelSearchBar = () => {
                   />
                 </div>
               </div>
-              <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full flex flex-col gap-y-2">
+              <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full flex flex-col">
                 <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">
                   Guests & Rooms
                 </p>
