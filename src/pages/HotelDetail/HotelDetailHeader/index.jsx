@@ -69,7 +69,7 @@ export const HotelDetailHeader = () => {
           <select
             name="lang"
             id="lang"
-            className="bg-[#1e1e1e] text-white rounded-[7px] px-[15px] focus:outline-none text-sm 2xl:text-[0.8vw]">
+            className="bg-[#1e1e1e] text-white rounded-[7px] px-[15px] focus:outline-none text-sm 2xl:text-[0.8vw] max:text-[20px]">
             <option value="english">English</option>
             <option value="spanish">Spanish</option>
             <option value="german">German</option>

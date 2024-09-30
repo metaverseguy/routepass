@@ -6,7 +6,7 @@ export const Question = ({ title, content }) => {
     <AccordionItem title={title}>
       <p
         style={{ padding: '18px' }}
-        className="text-[14px] sm:text-[16px] 2xl:text-[0.9vw] text-[#292929] text-left">
+        className="text-[14px] sm:text-[16px] 2xl:text-[0.9vw] max:text-[22px] text-[#292929] text-left">
         {content}
       </p>
     </AccordionItem>

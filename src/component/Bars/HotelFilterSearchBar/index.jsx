@@ -12,7 +12,7 @@ export const HotelFilterSearchBar = ({ visible }) => {
     <div
       className={`bg-white  ${visible === 'mobile' ? 'rounded-none' : 'rounded-[15px] shadow'} flex flex-col gap-y-[27px] px-5 py-6 w-full`}>
       <div className="px-5 py-4 bg-[#f5f5f5] flex justify-between rounded-[10px]">
-        <p className="text-[14px] 2xl:text-[1vw] font-semibold">Track Prices</p>
+        <p className="text-[14px] 2xl:text-[1vw] max:text-[24px] font-semibold">Track Prices</p>
         <SwitchButton />
       </div>
       <FilterAccordion title="Book with peace of mind">

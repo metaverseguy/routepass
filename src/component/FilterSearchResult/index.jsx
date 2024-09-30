@@ -7,8 +7,10 @@ import { Dropdown } from 'primereact/dropdown';
 import { FilterSearchBar } from '../../component/Bars/FilterSearchBar';
 import { useState } from 'react';
 import { BiX } from 'react-icons/bi';
+import { useNavigate } from 'react-router-dom';
 
 export const FilterSearchResult = () => {
+  const navigate = useNavigate();
   const [flightTypeValue, setFlightTypeValue] = useState({
     name: 'Cheapest',
     code: 'cp',
@@ -123,12 +125,12 @@ export const FilterSearchResult = () => {
               </div>
             </div>
             <div className="flex px-5 py-3 bg-white shadow justify-between rounded-[5px] sm:rounded-[10px]">
-              <span className="text-[#29292950] text-[8px] sm:text-sm 2xl:text-[0.9vw]">
+              <span className="text-[#29292950] text-[8px] sm:text-sm 2xl:text-[0.9vw] max:text-[22px]">
                 1820 Flights Found
               </span>
               <div className="flex items-center">
                 <AiOutlineExclamationCircle color="#1e1e1e" />
-                <span className="text-[#1e1e1e] text-[8px] sm:text-sm 2xl:text-[0.9vw]">
+                <span className="text-[#1e1e1e] text-[8px] sm:text-sm 2xl:text-[0.9vw] max:text-[22px]">
                   Additional Bag Fees May Apply
                 </span>
               </div>
@@ -136,14 +138,14 @@ export const FilterSearchResult = () => {
             <div className="hidden md:block">
               <div className="flex items-center justify-between bg-white px-5 py-[17px] rounded-lg shadow">
                 <div className="flex flex-col">
-                  <p className="font-semibold text-[20px] 2xl:text-[1.1vw] text-[#292929]">
+                  <p className="font-semibold text-[20px] 2xl:text-[1.1vw] max:text-[26px] text-[#292929]">
                     Cheapest
                   </p>
                   <div className="flex">
-                    <p className="text-[#292929] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    <p className="text-[#292929] 2xl:text-[0.9vw] max:text-[22px] font-semibold text-[18px]">
                       $200
                     </p>
-                    <p className="text-[#29292950] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    <p className="text-[#29292950] 2xl:text-[0.9vw] max:text-[22px] font-semibold text-[18px]">
                       {' '}
                       - 1h 06m
                     </p>
@@ -151,12 +153,14 @@ export const FilterSearchResult = () => {
                 </div>
                 <div className="border-[2.5px] border-[#29292950] h-8 mx-4"></div>
                 <div className="flex flex-col">
-                  <p className="font-semibold text-[20px] 2xl:text-[1.1vw] text-[#292929]">Best</p>
+                  <p className="font-semibold text-[20px] 2xl:text-[1.1vw] max:text-[26px] text-[#292929]">
+                    Best
+                  </p>
                   <div className="flex">
-                    <p className="text-[#292929] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    <p className="text-[#292929] 2xl:text-[0.9vw] max:text-[22px] font-semibold text-[18px]">
                       $200
                     </p>
-                    <p className="text-[#29292950] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    <p className="text-[#29292950] 2xl:text-[0.9vw] max:text-[22px] font-semibold text-[18px]">
                       {' '}
                       - 1h 06m
                     </p>
@@ -164,14 +168,14 @@ export const FilterSearchResult = () => {
                 </div>
                 <div className="border-[2.5px] border-[#29292950] h-8 mx-4"></div>
                 <div className="flex flex-col">
-                  <p className="font-semibold text-[20px] 2xl:text-[1.1vw] text-[#292929]">
+                  <p className="font-semibold text-[20px] 2xl:text-[1.1vw] max:text-[26px] text-[#292929]">
                     Quickest
                   </p>
                   <div className="flex">
-                    <p className="text-[#292929] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    <p className="text-[#292929] 2xl:text-[0.9vw] max:text-[22px] font-semibold text-[18px]">
                       $200
                     </p>
-                    <p className="text-[#29292950] 2xl:text-[0.9vw] font-semibold text-[18px]">
+                    <p className="text-[#29292950] 2xl:text-[0.9vw] max:text-[22px] font-semibold text-[18px]">
                       {' '}
                       - 1h 06m
                     </p>
@@ -180,14 +184,18 @@ export const FilterSearchResult = () => {
                 <div className="border-[2.5px] border-[#29292950] h-8 mx-4"></div>
                 <div className="flex items-center justify-center">
                   <TbAlignCenter color="#29292950" />
-                  <span className="text-[#29292950] text-[16px] 2xl:text-[0.9vw]">Other Sort</span>
+                  <span className="text-[#29292950] text-[16px] 2xl:text-[0.9vw] max:text-[22px]">
+                    Other Sort
+                  </span>
                 </div>
               </div>
             </div>
             <FlightCard />
             <FlightCard />
             <FlightCard />
-            <button className="bg-[#1E1E1E] text-white py-[10px] sm:py-[11px] md:py-4 rounded-[10px] text-[8px] sm:text-sm md:text-[20px] font-semibold">
+            <button
+              onClick={() => navigate('/detail')}
+              className="bg-[#1E1E1E] text-white py-[10px] sm:py-[11px] md:py-4 rounded-[10px] text-[8px] sm:text-sm md:text-[20px] font-semibold">
               Load More
             </button>
           </div>

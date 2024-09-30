@@ -5,10 +5,10 @@ export const FlightDeals = () => {
     <div className="flex flex-col justify-center items-center">
       <div className="max-w-[1440px] flex flex-col items-center justify-center p-14 px-5 sm:px-14 md:px-16 text-[#292929] w-full">
         <div className="text-center max-w-[675px]">
-          <p className="text-[28px] sm:text-[44px] 2xl:text-[2.5vw] font-semibold">
+          <p className="text-[28px] sm:text-[44px] 2xl:text-[2.5vw] max:text-[60px] font-semibold">
             Best Flight Deals
           </p>
-          <p className="text-[16px] sm:text-[18px] 2xl:text-[1vw]">
+          <p className="text-[16px] sm:text-[18px] 2xl:text-[1vw] max:text-[24px]">
             Get unbeatable prices on flights to your favorite destinations. Our curated deals ensure
             you save money while enjoying top-tier travel experiences
           </p>

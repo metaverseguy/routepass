@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       screens: {
         tablet: '810px',
-        mobile: '390px'
+        mobile: '390px',
+        max: '2500px',
       },
       backgroundImage: {
         'dashed-line':

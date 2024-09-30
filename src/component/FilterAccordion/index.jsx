@@ -19,7 +19,7 @@ export const FilterAccordion = ({ children, title, props }) => {
           <button
             className={`${
               activeElement === 'element1' && `text-primary`
-            } group relative flex w-full items-center rounded-none bg-white text-left text-base text-[#292929] font-semibold 2xl:text-[1vw] transition ${props}`}
+            } group relative flex w-full items-center rounded-none bg-white text-left text-base text-[#292929] font-semibold 2xl:text-[1vw] max:text-[24px] transition ${props}`}
             type="button"
             onClick={() => handleClick('element1')}
             aria-expanded="true"

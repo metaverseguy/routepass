@@ -12,19 +12,25 @@ const BestFlightDeal = ({ hotel }) => {
         <div className="flex items-stretch justify-between">
           <div className="flex flex-col gap-y-[5px]">
             <div className="flex flex-col gap-y-[10px]">
-              <h2 className="text-[18px] 2xl:text-[1vw] font-semibold text-[#333333]">
+              <h2 className="text-[18px] 2xl:text-[1vw] max:text-[24px] font-semibold text-[#333333]">
                 {hotel.location}
               </h2>
             </div>
-            <p className="text-[#979797] text-[14px] 2xl:text-[0.9vw]">{hotel.country}</p>
+            <p className="text-[#979797] text-[14px] 2xl:text-[0.9vw] max:text-[22px]">
+              {hotel.country}
+            </p>
           </div>
           <div className="flex flex-col items-center">
             <div className="flex flex-col">
-              <p className="text-gray-500 text-sm 2xl:text-[0.8vw]">Start From</p>
+              <p className="text-gray-500 text-sm  max:text-[20px]">Start From</p>
             </div>
             <div className="flex items-center justify-center">
-              <p className="text-[18px] 2xl:text-[1vw] font-semibold text-[#333333]">$250</p>
-              <p className="text-[12px] 2xl:text-[0.8vw] font-semibold text-[#29292950]">/Night</p>
+              <p className="text-[18px] 2xl:text-[1vw] max:text-[24px] font-semibold text-[#333333]">
+                $250
+              </p>
+              <p className="text-[12px] 2xl:text-[0.8vw] max:text-[20px] font-semibold text-[#29292950]">
+                /Night
+              </p>
             </div>
           </div>
         </div>

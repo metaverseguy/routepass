@@ -74,7 +74,7 @@ const HotelSearchBar = () => {
                 />
                 <label
                   htmlFor="return"
-                  className={`text-nowrap text-base 2xl:text-[0.8vw] ${selectedTravelType.name === 'Hotel' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
+                  className={`text-nowrap text-base 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Hotel' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
                   Hotel
                 </label>
               </div>
@@ -89,7 +89,7 @@ const HotelSearchBar = () => {
                 />
                 <label
                   htmlFor="one-way"
-                  className={`text-nowrap text-base 2xl:text-[0.8vw] ${selectedTravelType.name === 'Villa' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
+                  className={`text-nowrap text-base 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Villa' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
                   Villa
                 </label>
               </div>
@@ -104,7 +104,7 @@ const HotelSearchBar = () => {
                 />
                 <label
                   htmlFor="multi-city"
-                  className={`text-nowrap text-base 2xl:text-[0.8vw] ${selectedTravelType.name === 'Resort' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
+                  className={`text-nowrap text-base 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Resort' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
                   Resort
                 </label>
               </div>
@@ -119,7 +119,7 @@ const HotelSearchBar = () => {
                 />
                 <label
                   htmlFor="multi-city"
-                  className={`text-nowrap text-base 2xl:text-[0.8vw] ${selectedTravelType.name === 'Residence' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
+                  className={`text-nowrap text-base 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Residence' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
                   Residence
                 </label>
               </div>
@@ -127,7 +127,7 @@ const HotelSearchBar = () => {
 
             <div className="flex justify-center bg-[#F5F5F5] rounded-[500px]">
               <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] ${
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] max:text-[22px] ${
                   activeTab === 'economy'
                     ? 'bg-[#1E1E1E] text-white'
                     : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -136,7 +136,7 @@ const HotelSearchBar = () => {
                 Economy
               </button>
               <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] ${
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] max:text-[22px] ${
                   activeTab === 'bussiness'
                     ? 'bg-[#1E1E1E] text-white'
                     : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -145,7 +145,7 @@ const HotelSearchBar = () => {
                 Business
               </button>
               <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] ${
+                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] max:text-[22px] ${
                   activeTab === 'firstclass'
                     ? 'bg-[#1E1E1E] text-white'
                     : 'bg-[#F5F5F5] text-[#1E1E1E]'
@@ -182,11 +182,13 @@ const HotelSearchBar = () => {
           <div className="flex gap-[10px] 2xl:flex-row flex-col w-full items-stretch justify-center">
             <div className="flex flex-col md:flex-row gap-[10px] basis-2/5">
               <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full flex flex-col">
-                <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">Where to?</p>
+                <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
+                  Where to?
+                </p>
                 <input
                   type="text"
                   placeholder="From"
-                  className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
+                  className="text-base 2xl:text-[0.9vw] max:text-[22px] bg-gray-100 text-[#292929] w-full focus:outline-none"
                   defaultValue="Select your destination or Name"
                 />
               </div>
@@ -194,32 +196,36 @@ const HotelSearchBar = () => {
             <div className="flex gap-[10px] flex-col md:flex-row w-full basis-3/5">
               <div className="flex gap-[10px] basis-2/3 w-full">
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col">
-                  <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">Check In</p>
+                  <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
+                    Check In
+                  </p>
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
+                    className="text-base 2xl:text-[0.9vw] max:text-[22px] bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="04/06/2024"
                   />
                 </div>
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col">
-                  <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">Check Out</p>
+                  <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
+                    Check Out
+                  </p>
                   <input
                     type="text"
                     placeholder="From"
-                    className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
+                    className="text-base 2xl:text-[0.9vw] max:text-[22px] bg-gray-100 text-[#292929] w-full focus:outline-none"
                     defaultValue="05/06/2024"
                   />
                 </div>
               </div>
               <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full flex flex-col">
-                <p className="text-base 2xl:text-[0.9vw] text-left text-[#29292950]">
+                <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
                   Guests & Rooms
                 </p>
                 <input
                   type="text"
                   placeholder="From"
-                  className="text-base 2xl:text-[0.9vw] bg-gray-100 text-[#292929] w-full focus:outline-none"
+                  className="text-base 2xl:text-[0.9vw] max:text-[22px] bg-gray-100 text-[#292929] w-full focus:outline-none"
                   defaultValue="2 Persons, 2 Rooms"
                 />
               </div>
@@ -227,7 +233,7 @@ const HotelSearchBar = () => {
           </div>
           <button
             onClick={() => navigate('/hotelsearch')}
-            className="flex-1 text-base 2xl:text-[0.9vw] text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
+            className="flex-1 text-base 2xl:text-[0.9vw] max:text-[22px] text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
             <BiSearch color="white" /> Search
           </button>
         </div>
@@ -256,30 +262,32 @@ const HotelSearchBar = () => {
 
         <div className="flex flex-col md:flex-row gap-[15px] w-full">
           <div className="flex flex-wrap gap-[15px]">
-            <p className="text-[#9f9f9f] text-sm 2xl:text-[0.7vw]">Popular Filters:</p>
+            <p className="text-[#9f9f9f] text-sm 2xl:text-[0.7vw] max:text-[18px]">
+              Popular Filters:
+            </p>
             <button
-              className={`text-sm 2xl:text-[0.7vw] rounded ${
+              className={`text-sm 2xl:text-[0.7vw] max:text-[18px] rounded ${
                 filterItem === 'recommended' ? 'text-[#000000] underline' : 'text-[#9f9f9f]'
               }`}
               onClick={() => setFilterItem('recommended')}>
               Recommended
             </button>
             <button
-              className={`text-sm 2xl:text-[0.7vw] rounded ${
+              className={`text-sm 2xl:text-[0.7vw] max:text-[18px] rounded ${
                 filterItem === 'airport' ? 'text-[#000000] underline' : 'text-[#9f9f9f]'
               }`}
               onClick={() => setFilterItem('airport')}>
               Closest to the Airport
             </button>
             <button
-              className={`text-sm 2xl:text-[0.7vw] rounded ${
+              className={`text-sm 2xl:text-[0.7vw] max:text-[18px] rounded ${
                 filterItem === 'bestreview' ? 'text-[#000000] underline' : 'text-[#9f9f9f]'
               }`}
               onClick={() => setFilterItem('bestreview')}>
               Best Review
             </button>
             <button
-              className={`text-sm 2xl:text-[0.7vw] rounded ${
+              className={`text-sm 2xl:text-[0.7vw] max:text-[18px] rounded ${
                 filterItem === 'swimming' ? 'text-[#000000] underline' : 'text-[#9f9f9f]'
               }`}
               onClick={() => setFilterItem('swimming')}>
@@ -287,14 +295,14 @@ const HotelSearchBar = () => {
             </button>
 
             <button
-              className={`text-sm 2xl:text-[0.7vw] rounded ${
+              className={`text-sm 2xl:text-[0.7vw] max:text-[18px] rounded ${
                 filterItem === 'fivestar' ? 'text-[#000000] underline' : 'text-[#9f9f9f]'
               }`}
               onClick={() => setFilterItem('fivestar')}>
               Five Star Only Hotels
             </button>
             <button
-              className={`text-sm 2xl:text-[0.7vw] rounded ${
+              className={`text-sm 2xl:text-[0.7vw] max:text-[18px] rounded ${
                 filterItem === 'threestars' ? 'text-[#000000] underline' : 'text-[#9f9f9f]'
               }`}
               onClick={() => setFilterItem('threestars')}>

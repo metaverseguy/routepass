@@ -5,11 +5,11 @@ export const StopCheckBox = ({ stop, price }) => {
     <label className="flex items-center justify-between">
       <div className="flex items-center gap-1">
         <input type="checkbox" name="direct" className="accent-black" />
-        <p className="text-sm 2xl:text-[0.8vw] text-[#292929]">{stop}</p>
+        <p className="text-sm 2xl:text-[0.8vw] max:text-[20px] text-[#292929]">{stop}</p>
       </div>
       <div className="flex items-center gap-1">
-        <p className="text-xs 2xl:text-[0.7vw] text-[#29292950]">from</p>
-        <p className="text-sm 2xl:text-[0.8vw] text-[#292929]">{price}</p>
+        <p className="text-xs 2xl:text-[0.7vw] max:text-[18px] text-[#29292950]">from</p>
+        <p className="text-sm 2xl:text-[0.8vw] max:text-[20px] text-[#292929]">{price}</p>
       </div>
     </label>
   );
