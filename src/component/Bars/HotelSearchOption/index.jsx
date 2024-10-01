@@ -41,63 +41,67 @@ export default function HotelSearchOption() {
             <div className="hidden md:block">
               <div className="flex justify-between mb-5">
                 <div className="gap-3 flex justify-between items-center">
-                  <div className="flex items-center gap-2">
+                  <div
+                    className="flex items-center gap-2"
+                    onClick={() => setSelectedTravelType({ name: 'Hotel', code: 'ht' })}>
                     <input
                       type="radio"
-                      id="return"
+                      id="Hotel"
                       name="trip"
-                      value="return"
+                      value="Hotel"
                       defaultChecked
                       className="accent-black"
-                      onClick={() => setSelectedTravelType({ name: 'Hotel', code: 'ht' })}
                     />
                     <label
-                      htmlFor="return"
+                      htmlFor="Hotel"
                       className={`text-nowrap 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Hotel' ? 'text-white' : 'text-[#ffffff50]'}`}>
                       Hotel
                     </label>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div
+                    className="flex items-center gap-2"
+                    onClick={() => setSelectedTravelType({ name: 'Villa', code: 'vl' })}>
                     <input
                       type="radio"
-                      id="one-way"
+                      id="Villa"
                       name="trip"
-                      value="one-way"
+                      value="Villa"
                       className="accent-black"
-                      onClick={() => setSelectedTravelType({ name: 'Villa', code: 'vl' })}
                     />
                     <label
-                      htmlFor="one-way"
+                      htmlFor="Villa"
                       className={`text-nowrap 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Villa' ? 'text-white' : 'text-[#ffffff50]'}`}>
                       Villa
                     </label>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div
+                    className="flex items-center gap-2"
+                    onClick={() => setSelectedTravelType({ name: 'Resort', code: 'rs' })}>
                     <input
                       type="radio"
-                      id="multi-city"
+                      id="Resort"
                       name="trip"
-                      value="multi-city"
+                      value="Resort"
                       className="accent-black"
-                      onClick={() => setSelectedTravelType({ name: 'Resort', code: 'rs' })}
                     />
                     <label
-                      htmlFor="multi-city"
+                      htmlFor="Resort"
                       className={`text-nowrap 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Resort' ? 'text-white' : 'text-[#ffffff50]'}`}>
                       Resort
                     </label>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div
+                    className="flex items-center gap-2"
+                    onClick={() => setSelectedTravelType({ name: 'Residence', code: 'rd' })}>
                     <input
                       type="radio"
-                      id="multi-city"
+                      id="Residence"
                       name="trip"
-                      value="multi-city"
+                      value="Residence"
                       className="accent-black"
-                      onClick={() => setSelectedTravelType({ name: 'Residence', code: 'rd' })}
                     />
                     <label
-                      htmlFor="multi-city"
+                      htmlFor="Residence"
                       className={`text-nowrap 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Residence' ? 'text-white' : 'text-[#ffffff50]'}`}>
                       Residence
                     </label>

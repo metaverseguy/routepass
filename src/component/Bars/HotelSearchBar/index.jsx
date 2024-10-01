@@ -8,7 +8,6 @@ import 'primereact/resources/themes/lara-light-cyan/theme.css';
 
 const HotelSearchBar = () => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState('economy');
   const [filterItem, setFilterItem] = useState('recommended');
   const [selectedTravelType, setSelectedTravelType] = useState({ name: 'Hotel', code: 'ht' });
   const [selectedTravelPurpose, setSelectedTravelPurpose] = useState({
@@ -65,15 +64,15 @@ const HotelSearchBar = () => {
               <div className="flex items-center gap-2">
                 <input
                   type="radio"
-                  id="return"
+                  id="Hotel"
                   name="trip"
-                  value="return"
+                  value="Hotel"
                   defaultChecked
                   className="accent-black"
                   onClick={() => setSelectedTravelType({ name: 'Hotel', code: 'ht' })}
                 />
                 <label
-                  htmlFor="return"
+                  htmlFor="Hotel"
                   className={`text-nowrap text-base 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Hotel' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
                   Hotel
                 </label>
@@ -81,14 +80,14 @@ const HotelSearchBar = () => {
               <div className="flex items-center gap-2">
                 <input
                   type="radio"
-                  id="one-way"
+                  id="Villa"
                   name="trip"
-                  value="one-way"
+                  value="Villa"
                   className="accent-black"
                   onClick={() => setSelectedTravelType({ name: 'Villa', code: 'vl' })}
                 />
                 <label
-                  htmlFor="one-way"
+                  htmlFor="Villa"
                   className={`text-nowrap text-base 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Villa' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
                   Villa
                 </label>
@@ -96,14 +95,14 @@ const HotelSearchBar = () => {
               <div className="flex items-center gap-2">
                 <input
                   type="radio"
-                  id="multi-city"
+                  id="Resort"
                   name="trip"
-                  value="multi-city"
+                  value="Resort"
                   className="accent-black"
                   onClick={() => setSelectedTravelType({ name: 'Resort', code: 'rs' })}
                 />
                 <label
-                  htmlFor="multi-city"
+                  htmlFor="Resort"
                   className={`text-nowrap text-base 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Resort' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
                   Resort
                 </label>
@@ -111,48 +110,18 @@ const HotelSearchBar = () => {
               <div className="flex items-center gap-2">
                 <input
                   type="radio"
-                  id="multi-city"
+                  id="Residence"
                   name="trip"
-                  value="multi-city"
+                  value="Residence"
                   className="accent-black"
                   onClick={() => setSelectedTravelType({ name: 'Residence', code: 'rd' })}
                 />
                 <label
-                  htmlFor="multi-city"
+                  htmlFor="Residence"
                   className={`text-nowrap text-base 2xl:text-[0.8vw] max:text-[20px] ${selectedTravelType.name === 'Residence' ? 'c-chromaphobicblack' : 'c-chromaphobicblackhalf'}`}>
                   Residence
                 </label>
               </div>
-            </div>
-
-            <div className="flex justify-center bg-[#F5F5F5] rounded-[500px]">
-              <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] max:text-[22px] ${
-                  activeTab === 'economy'
-                    ? 'bg-[#1E1E1E] text-white'
-                    : 'bg-[#F5F5F5] text-[#1E1E1E]'
-                }`}
-                onClick={() => setActiveTab('economy')}>
-                Economy
-              </button>
-              <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] max:text-[22px] ${
-                  activeTab === 'bussiness'
-                    ? 'bg-[#1E1E1E] text-white'
-                    : 'bg-[#F5F5F5] text-[#1E1E1E]'
-                }`}
-                onClick={() => setActiveTab('bussiness')}>
-                Business
-              </button>
-              <button
-                className={`px-[30px] py-[3px] rounded-[500px] transition-colors duration-300 text-base 2xl:text-[0.9vw] max:text-[22px] ${
-                  activeTab === 'firstclass'
-                    ? 'bg-[#1E1E1E] text-white'
-                    : 'bg-[#F5F5F5] text-[#1E1E1E]'
-                }`}
-                onClick={() => setActiveTab('firstclass')}>
-                First Class
-              </button>
             </div>
           </div>
         </div>
