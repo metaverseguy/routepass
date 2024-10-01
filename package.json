@@ -26,7 +26,8 @@
     "responsive-react-accordion": "^1.1.5",
     "slick-carousel": "^1.8.1",
     "tw-elements-react": "^1.0.0-alpha-end",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.22"
   },
   "scripts": {
     "start": "react-scripts start",
