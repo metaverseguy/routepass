@@ -70,9 +70,11 @@ export const HotelDetailHeader = () => {
             name="lang"
             id="lang"
             className="bg-[#1e1e1e] text-white rounded-[7px] px-[15px] focus:outline-none text-sm 2xl:text-[0.8vw] max:text-[20px]">
-            <option value="english">English</option>
-            <option value="spanish">Spanish</option>
-            <option value="german">German</option>
+            <option value="overview">Overview</option>
+            <option value="facilities">Facilities</option>
+            <option value="reviews">Reviews</option>
+            <option value="roomavailable">Room Available</option>
+            <option value="exploreareas">Explore Areas</option>
           </select>
           <div className="flex items-center">
             <p className="text-[34px] md:text-[40px] text-white">$250</p>

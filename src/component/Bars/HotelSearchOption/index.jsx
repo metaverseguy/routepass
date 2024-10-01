@@ -11,9 +11,10 @@ export default function HotelSearchOption() {
   const [selectedTravelType, setSelectedTravelType] = useState({ name: 'Hotel', code: 'ht' });
 
   const travelType = [
-    { name: 'Return', code: 'rt' },
-    { name: 'One Way', code: 'ow' },
-    { name: 'Multi-City', code: 'mc' },
+    { name: 'Hotel', code: 'ht' },
+    { name: 'Villa', code: 'vl' },
+    { name: 'Resort', code: 'rs' },
+    { name: 'Residence', code: 'rd' },
   ];
 
   return (
@@ -172,7 +173,7 @@ export default function HotelSearchOption() {
                 </div>
               </div>
               <button
-                onClick={() => navigate('/search')}
+                onClick={() => navigate('/hotelsearch')}
                 className="flex-1 2xl:text-[0.9vw] max:text-[22px] text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
                 <BiSearch color="white" /> Search
               </button>
