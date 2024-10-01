@@ -1,3 +1,4 @@
+// HotelSearch
 import React from 'react';
 import Navbar from '../../component/Bars/Navbar';
 import HotelSearchOption from '../../component/Bars/HotelSearchOption';
