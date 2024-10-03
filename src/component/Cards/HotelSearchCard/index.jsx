@@ -83,7 +83,7 @@ const HotelSearchCard = () => {
                 <button
                   onClick={() => navigate('/hoteldetail')}
                   className="text-[12px] lg:text-[14px] 2xl:text-[0.8vw] max:text-[20px] text-wrap font-semibold c-chromaphobicblack">
-                  See More
+                  More Detail
                 </button>
               </div>
             </div>
@@ -171,9 +171,10 @@ const HotelSearchCard = () => {
               <button className="flex-1 text-[12px] lg:text-[16px] 2xl:text-[1vw] max:text-[24px] font-semibold text-white py-[14px] bg-[#333333] rounded-[10px]">
                 Go to Site
               </button>
-              <button className="flex flex-1 justify-center items-center text-[12px] lg:text-[16px] 2xl:text-[1vw] max:text-[24px] font-semibold text-white py-[14px] bg-[#333333] rounded-[10px]">
-                <FaBookmark />
-                Bookmark Deal
+              <button
+                onClick={() => navigate('/hoteldetail')}
+                className="flex flex-1 justify-center items-center text-[12px] lg:text-[16px] 2xl:text-[1vw] max:text-[24px] font-semibold text-white py-[14px] bg-[#333333] rounded-[10px]">
+                More Detail
               </button>
             </div>
           </div>

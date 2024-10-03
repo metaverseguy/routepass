@@ -288,55 +288,51 @@ const SearchBar = () => {
         ) : null}
 
         <div className="flex gap-[15px]">
-          <div className="flex flex-col md:flex-row gap-[15px]">
-            <div className="flex gap-[15px]">
-              <p className="text-[#9f9f9f] text-sm">Popular Filters:</p>
-              <button
-                className={`text-sm rounded ${
-                  filterItem === 'recommended' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
-                }`}
-                onClick={() => setFilterItem('recommended')}>
-                Recommended
-              </button>
-              <button
-                className={`text-sm rounded ${
-                  filterItem === 'affordable' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
-                }`}
-                onClick={() => setFilterItem('affordable')}>
-                Most Affordable
-              </button>
-              <button
-                className={`text-sm rounded ${
-                  filterItem === 'bestreview' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
-                }`}
-                onClick={() => setFilterItem('bestreview')}>
-                Best Review
-              </button>
-            </div>
-            <div className="flex gap-[15px]">
-              <button
-                className={`text-sm rounded ${
-                  filterItem === 'nonstopflight' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
-                }`}
-                onClick={() => setFilterItem('nonstopflight')}>
-                Non-Stop Flights
-              </button>
+          <div className="flex flex-wrap gap-[15px]">
+            <p className="text-[#9f9f9f] text-sm">Popular Filters:</p>
+            <button
+              className={`text-sm rounded ${
+                filterItem === 'recommended' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+              }`}
+              onClick={() => setFilterItem('recommended')}>
+              Recommended
+            </button>
+            <button
+              className={`text-sm rounded ${
+                filterItem === 'affordable' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+              }`}
+              onClick={() => setFilterItem('affordable')}>
+              Most Affordable
+            </button>
+            <button
+              className={`text-sm rounded ${
+                filterItem === 'bestreview' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+              }`}
+              onClick={() => setFilterItem('bestreview')}>
+              Best Review
+            </button>
+            <button
+              className={`text-sm rounded ${
+                filterItem === 'nonstopflight' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+              }`}
+              onClick={() => setFilterItem('nonstopflight')}>
+              Non-Stop Flights
+            </button>
 
-              <button
-                className={`text-sm rounded ${
-                  filterItem === 'shortestduration' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
-                }`}
-                onClick={() => setFilterItem('shortestduration')}>
-                Shortest Duration
-              </button>
-              <button
-                className={`text-sm rounded ${
-                  filterItem === 'flexibledate' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
-                }`}
-                onClick={() => setFilterItem('flexibledate')}>
-                Flexible Dates
-              </button>
-            </div>
+            <button
+              className={`text-sm rounded ${
+                filterItem === 'shortestduration' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+              }`}
+              onClick={() => setFilterItem('shortestduration')}>
+              Shortest Duration
+            </button>
+            <button
+              className={`text-sm rounded ${
+                filterItem === 'flexibledate' ? 'text-[#2B2B2B] underline' : 'text-[#9f9f9f]'
+              }`}
+              onClick={() => setFilterItem('flexibledate')}>
+              Flexible Dates
+            </button>
           </div>
         </div>
       </div>
