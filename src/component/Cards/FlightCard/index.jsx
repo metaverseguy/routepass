@@ -17,34 +17,34 @@ const FlightCard = () => {
             className="w-5 h-5 sm:w-9 sm:h-9 md:w-12 md:h-12 object-contain"
           />
           <div className="flex gap-1 flex-col">
-            <h2 className="text-[8px] sm:text-sm md:text-[20px] 2xl:text-[1.2vw] max:text-[28px] text-[#292929] font-semibold">
+            <h2 className="text-[12px] sm:text-sm md:text-[20px] 2xl:text-[1.2vw] max:text-[28px] text-[#292929] font-semibold">
               Garuda Indonesia
             </h2>
-            <p className="text-[6px] sm:text-[12px] md:text-[16px] 2xl:text-[0.9vw] max:text-[22px] text-[#29292950]">
+            <p className="text-[10px] sm:text-[12px] md:text-[16px] 2xl:text-[0.9vw] max:text-[22px] text-[#29292950]">
               UA 4556, AC 3289
             </p>
           </div>
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-[8px] sm:text-sm md:text-[20px] 2xl:text-[1vw] max:text-[24px] text-[#292929] font-semibold">
+          <p className="text-[12px] sm:text-sm md:text-[20px] 2xl:text-[1vw] max:text-[24px] text-[#292929] font-semibold">
             1h 06m
           </p>
-          <p className="text-[6px] sm:text-[12px] md:text-[16px] 2xl:text-[0.9vw] max:text-[22px] text-[#29292950]">
+          <p className="text-[10px] sm:text-[12px] md:text-[16px] 2xl:text-[0.9vw] max:text-[22px] text-[#29292950]">
             Direct
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-[8px] sm:text-sm md:text-[20px] 2xl:text-[1vw] max:text-[24px] text-[#292929] font-semibold">
+          <p className="text-[12px] sm:text-sm md:text-[20px] 2xl:text-[1vw] max:text-[24px] text-[#292929] font-semibold">
             $200
           </p>
-          <p className="text-[6px] sm:text-[12px] md:text-[16px] 2xl:text-[0.9vw] max:text-[22px] text-[#29292950]">
+          <p className="text-[10px] sm:text-[12px] md:text-[16px] 2xl:text-[0.9vw] max:text-[22px] text-[#29292950]">
             Ticket Price
           </p>
         </div>
         <div>
           <button
             onClick={() => navigate('/flightdetail')}
-            className="bg-white text-[#292929] text-[6px] sm:text-[12px] md:text-[16px] 2xl:text-[1vw] max:text-[24px] font-semibold px-[10px] py-[6px] sm:px-[17px] sm:py-[10px] md:px-6 md:py-[14px] rounded-[4px] sm:rounded-[7px] md:rounded-[10px] border-[2px] border-[#292929]">
+            className="bg-white text-[#292929] text-[12px] sm:text-[14px] md:text-[16px] 2xl:text-[1vw] max:text-[24px] font-semibold px-[10px] py-[6px] sm:px-[17px] sm:py-[10px] md:px-6 md:py-[14px] rounded-[4px] sm:rounded-[7px] md:rounded-[10px] border-[2px] border-[#292929]">
             View Deal
           </button>
         </div>
@@ -92,7 +92,7 @@ const FlightCard = () => {
       </div>
 
       <div className="border-dashed bg-[#F1F7FF] rounded-[5px] py-[5px] mt-4 sm:mt-7 md:mt-10">
-        <p className="flex items-center justify-center text-[#1e1e1e] font-semibold text-center gap-x-2 text-[6px] sm:text-[10px] md:text-sm 2xl:text-[0.8vw] max:text-[20px]">
+        <p className="flex items-center justify-center text-[#1e1e1e] font-semibold text-center gap-x-2 text-[10px] sm:text-[10px] md:text-sm 2xl:text-[0.8vw] max:text-[20px]">
           <AiOutlineExclamationCircle color="#1e1e1e" />
           Included: Personal Item, Cabin Bag, Checked Bag
         </p>

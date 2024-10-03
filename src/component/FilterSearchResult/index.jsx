@@ -93,29 +93,29 @@ export const FilterSearchResult = () => {
         <div className="flex flex-col w-full gap-y-10">
           <div className="flex flex-col gap-y-5">
             <div className="block lg:hidden">
-              <div className="flex gap-[10px]">
+              <div className="flex gap-[4px] sm:gap-[10px]">
                 <button
                   className="flex w-full items-center bg-white gap-1 px-5 py-4 rounded-[7px] sm:rounded-[10px] shadow"
                   onClick={() => setVisibleFilterSetting('mobile')}>
                   <div className="transform rotate-90">
                     <GiSettingsKnobs />
                   </div>
-                  <p className="font-semibold text-[#292929] text-[12px] sm:text-[16px] ">
+                  <p className="font-semibold text-[#292929] text-[12px] sm:text-[16px] text-nowrap">
                     Filters & Settings
                   </p>
                 </button>
-                <div className="w-full bg-white shadow rounded-[7px] sm:rounded-[10px] flex justify-between items-center pr-3">
+                <div className="w-full bg-white shadow rounded-[7px] sm:rounded-[10px] flex justify-between items-center">
                   <Dropdown
                     variant="filled"
                     value={flightTypeValue}
                     onChange={(e) => setFlightTypeValue(e.value)}
                     options={flightType}
                     optionLabel="name"
-                    className="h-full items-center bg-[#ffffff] text-left focus:shadow-none shadow-none"
+                    className="h-full flex items-center bg-[#ffffff] text-left focus:shadow-none shadow-none"
                   />
-                  <div className="flex gap-2">
-                    <p className=" text-sm text-[#292929] font-semibold">{flightTypeValue.price}</p>
-                    <p className=" text-sm text-[#29292950] font-semibold text-nowrap">
+                  <div className="flex">
+                    <p className=" text-xs text-[#292929] font-semibold">{flightTypeValue.price}</p>
+                    <p className=" text-xs text-[#29292950] font-semibold text-nowrap">
                       {flightTypeValue.time}
                     </p>
                   </div>
