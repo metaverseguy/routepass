@@ -24,7 +24,7 @@ export const DetailHeader = () => {
         </div>
         <div className="flex items-center">
           <MdOutlineBookmark color="#ffffff" />
-          <p className="hidden sm:block items-center text-[18px] text-white font-semibold text-nowrap">
+          <p className="hidden sm:block items-center text-[18px] text-[#ffffff] font-semibold text-nowrap">
             Bookmark Deal
           </p>
         </div>
