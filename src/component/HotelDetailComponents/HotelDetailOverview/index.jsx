@@ -1,7 +1,7 @@
 import { FiZoomIn } from 'react-icons/fi';
 import { FiZoomOut } from 'react-icons/fi';
 import { BiFullscreen } from 'react-icons/bi';
-import { EllipsButton } from '../../../component/Buttons/EllipsButton';
+import { EllipsButton } from '../../Buttons/EllipsButton';
 
 export const HotelDetailOverview = () => {
   return (

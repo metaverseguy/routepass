@@ -10,7 +10,7 @@ import { Subscribe } from '../../component/Subscribe';
 import { Questions } from '../../component/Questions';
 import { Footer } from '../../component/Bars/Footer';
 
-const Main = () => {
+const Flight = () => {
   return (
     <div>
       <Navbar title="flights" />
@@ -27,4 +27,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Flight;

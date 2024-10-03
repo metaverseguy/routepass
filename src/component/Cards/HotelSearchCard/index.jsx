@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaBookmark } from 'react-icons/fa6';
 import { Rating } from 'react-simple-star-rating';
+import { useNavigate } from 'react-router-dom';
 
 const HotelSearchCard = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="hidden md:block">
@@ -22,16 +24,16 @@ const HotelSearchCard = () => {
             </div>
             <div className="flex justify-between">
               <div>
-                <p className="text-[10px] lg:text-[sm] 2xl:text-[0.9vw] max:text-[22px] text-gray-600">
+                <p className="text-[12px] lg:text-[14px] 2xl:text-[0.9vw] max:text-[22px] text-gray-600">
                   Lombok
                 </p>
-                <p className="text-[10px] lg:text-[sm] 2xl:text-[0.9vw] max:text-[22px] text-gray-500">
+                <p className="text-[12px] lg:text-[14px] 2xl:text-[0.9vw] max:text-[22px] text-gray-500">
                   2.41 from the city centre
                 </p>
               </div>
               <div className="flex flex-col">
                 <Rating initialValue={0} readonly={true} className="flex" />
-                <p className="text-[7px] lg:text-[10px] 2xl:text-[0.8vw] max:text-[20px] text-gray-500 text-sm">
+                <p className="lg:text-[14px] 2xl:text-[0.8vw] max:text-[20px] text-gray-500 text-xs">
                   5-Stars Hotel
                 </p>
               </div>
@@ -51,7 +53,7 @@ const HotelSearchCard = () => {
             </div>
             <div className="flex justify-between">
               <div className="flex flex-col">
-                <h2 className="text-[8px] lg:text-[xs] 2xl:text-[0.8vw] max:text-[20px] font-semibold c-chromaphobicblack">
+                <h2 className="text-[12px] lg:text-[14px] 2xl:text-[0.8vw] max:text-[20px] font-semibold c-chromaphobicblack">
                   Booking.com
                 </h2>
                 <h2 className="text-[12px] lg:text-[18px] 2xl:text-[1vw] max:text-[24px] font-semibold c-eerieblack">
@@ -60,7 +62,7 @@ const HotelSearchCard = () => {
               </div>
               <div className=" border-2 border-[#29292915] w-0"></div>
               <div className="flex flex-col">
-                <h2 className="text-[8px] lg:text-[xs] 2xl:text-[0.8vw] max:text-[20px] font-semibold c-chromaphobicblack">
+                <h2 className="text-[12px] lg:text-[14px] 2xl:text-[0.8vw] max:text-[20px] font-semibold c-chromaphobicblack">
                   Trip.com
                 </h2>
                 <h2 className="text-[12px] lg:text-[18px] 2xl:text-[1vw] max:text-[24px] font-semibold c-eerieblack">
@@ -69,7 +71,7 @@ const HotelSearchCard = () => {
               </div>
               <div className="border-2 border-[#29292915] w-0"></div>
               <div className="flex flex-col">
-                <h2 className="text-[8px] lg:text-[xs] 2xl:text-[0.8vw] max:text-[20px] font-semibold c-chromaphobicblack">
+                <h2 className="text-[12px] lg:text-[14px] 2xl:text-[0.8vw] max:text-[20px] font-semibold c-chromaphobicblack">
                   Agoda.com
                 </h2>
                 <h2 className="text-[12px] lg:text-[18px] 2xl:text-[1vw] max:text-[24px] font-semibold c-eerieblack">
@@ -78,9 +80,11 @@ const HotelSearchCard = () => {
               </div>
               <div className="border-2 border-[#29292915] w-0"></div>
               <div className="flex items-center">
-                <h2 className="text-[8px] lg:text-[xs] 2xl:text-[0.8vw] max:text-[20px] text-wrap font-semibold c-chromaphobicblack">
+                <button
+                  onClick={() => navigate('/hoteldetail')}
+                  className="text-[12px] lg:text-[14px] 2xl:text-[0.8vw] max:text-[20px] text-wrap font-semibold c-chromaphobicblack">
                   See More
-                </h2>
+                </button>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { RoomCard } from '../../../component/Cards/RoomCard';
+import { RoomCard } from '../../Cards/RoomCard';
 
 export const HotelDetailAvailableRoom = () => {
   return (

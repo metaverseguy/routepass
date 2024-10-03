@@ -3,7 +3,7 @@ import FlightPriceCard from '../Cards/FlightPriceCard';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { PriceCard } from '../Cards/PriceCard';
 
-export const FlightDetail = () => {
+export const FlightDetailContent = () => {
   // const [ticketPrice, setTicketPrice] = useState({ name: '$200', code: 'en' });
   const priceCards = [
     {

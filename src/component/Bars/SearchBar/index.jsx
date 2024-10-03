@@ -53,7 +53,7 @@ const SearchBar = () => {
   ];
 
   return (
-    <div className="-mt-[600px] md:-mt-[500px] flex flex-col items-center justify-center text-black text-center gap-20 w-full xl:px-44 xl:pt-28 lg:px-12 lg:pt-28 px-5 pt-20 z-0">
+    <div className="-mt-[600px] md:-mt-[500px] flex flex-col items-center justify-center text-black text-center gap-20 w-full lg:px-12 lg:pt-28 px-5 pt-20 z-0">
       <p className="text-[36px] lg:text-[56px] text-center max-w-[880px] font-bold text-white w-full">
         Get exclusive flight offers wherever your journey takes you
       </p>
@@ -244,7 +244,7 @@ const SearchBar = () => {
               </div>
             </div>
             <button
-              onClick={() => navigate('/search')}
+              onClick={() => navigate('/flightsearch')}
               className="flex-1 text-white md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center text-base 2xl:text-[0.9vw] max:text-[22px]">
               <BiSearch color="white" /> Search
             </button>
@@ -269,18 +269,18 @@ const SearchBar = () => {
           <div className="flex flex-col md:flex-row md:justify-between gap-[10px]">
             <div className="flex flex-col sm:flex-row gap-[10px]">
               <button
-                onClick={() => navigate('/search')}
+                onClick={() => navigate('/flightsearch')}
                 className="flex-1 md:flex-none text-white py-[14px] px-[24px] bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
                 <BiPlus color="white" /> Add Another Field
               </button>
               <button
-                onClick={() => navigate('/search')}
+                onClick={() => navigate('/flightsearch')}
                 className="flex-1 md:flex-none text-white py-[14px] px-[24px] bg-[#c7c7c7] rounded-[7px] flex justify-center items-center">
                 <BiX color="white" /> Clear All
               </button>
             </div>
             <button
-              onClick={() => navigate('/search')}
+              onClick={() => navigate('/flightsearch')}
               className="flex-1 md:flex-none text-white py-[14px] px-[24px] bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
               <BiSearch color="white" /> Search
             </button>

@@ -10,21 +10,12 @@ const HotelSearchBar = () => {
   const navigate = useNavigate();
   const [filterItem, setFilterItem] = useState('recommended');
   const [selectedTravelType, setSelectedTravelType] = useState({ name: 'Hotel', code: 'ht' });
-  const [selectedTravelPurpose, setSelectedTravelPurpose] = useState({
-    name: 'Economy',
-    code: 'en',
-  });
 
   const travelType = [
     { name: 'Hotel', code: 'ht' },
     { name: 'Villa', code: 'vl' },
     { name: 'Resort', code: 'rs' },
     { name: 'Residence', code: 'rd' },
-  ];
-  const travelPurpose = [
-    { name: 'Economy', code: 'en' },
-    { name: 'Business', code: 'bn' },
-    { name: 'First Class', code: 'fc' },
   ];
 
   const searchResultArray = [
@@ -52,8 +43,8 @@ const HotelSearchBar = () => {
   ];
 
   return (
-    <div className="-mt-[600px] md:-mt-[500px] flex flex-col items-center justify-center text-black text-center gap-20 w-full xl:px-44 xl:pt-28 lg:px-12 lg:pt-28 px-5 pt-20 z-0">
-      <p className="text-[36px] lg:text-[56px] text-center max-w-[880px] font-bold text-white w-full">
+    <div className="-mt-[600px] md:-mt-[500px] flex flex-col items-center justify-center text-black text-center gap-20 w-full lg:px-12 lg:pt-28 px-5 pt-20 z-0">
+      <p className="text-[36px] lg:text-[56px] text-center max-w-[880px] font-bold text-white">
         Get exclusive flight offers wherever your journey takes you
       </p>
 
@@ -136,21 +127,13 @@ const HotelSearchBar = () => {
               optionLabel="name"
               className="w-full bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm"
             />
-            <Dropdown
-              variant="filled"
-              value={selectedTravelPurpose}
-              onChange={(e) => setSelectedTravelPurpose(e.value)}
-              options={travelPurpose}
-              optionLabel="name"
-              className="w-full bg-[#f5f5f5] focus:shadow-none shadow-none text-left text-[#292929] text-sm"
-            />
           </div>
         </div>
 
-        <div className="flex flex-col 2xl:flex-row mb-5 gap-[10px] w-full">
-          <div className="flex gap-[10px] 2xl:flex-row flex-col w-full items-stretch justify-center">
+        <div className="flex flex-col lg:flex-row mb-5 gap-[10px] w-full">
+          <div className="flex gap-[10px] lg:flex-row flex-col w-full items-stretch justify-center">
             <div className="flex flex-col md:flex-row gap-[10px] basis-2/5">
-              <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full flex flex-col">
+              <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full md:flex flex-col">
                 <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
                   Where to?
                 </p>
@@ -161,9 +144,20 @@ const HotelSearchBar = () => {
                   defaultValue="Select your destination or Name"
                 />
               </div>
+              <div className="hidden border-black p-5 bg-gray-100 rounded-[7px] text-left w-full md:flex lg:hidden flex-col">
+                <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950] text-nowrap">
+                  Guests & Rooms
+                </p>
+                <input
+                  type="text"
+                  placeholder="From"
+                  className="text-base 2xl:text-[0.9vw] max:text-[22px] bg-gray-100 text-[#292929] w-full focus:outline-none"
+                  defaultValue="2 Persons, 2 Rooms"
+                />
+              </div>
             </div>
-            <div className="flex gap-[10px] flex-col md:flex-row w-full basis-3/5">
-              <div className="flex gap-[10px] basis-2/3 w-full">
+            <div className="flex gap-[10px] flex-col lg:flex-row w-full basis-3/5">
+              <div className="flex gap-[10px] w-full">
                 <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col">
                   <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
                     Check In
@@ -187,8 +181,8 @@ const HotelSearchBar = () => {
                   />
                 </div>
               </div>
-              <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full flex flex-col">
-                <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
+              <div className="border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full flex md:hidden lg:flex flex-col">
+                <p className="text-base 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950] text-nowrap">
                   Guests & Rooms
                 </p>
                 <input
@@ -211,18 +205,18 @@ const HotelSearchBar = () => {
           <div className="flex flex-col md:flex-row md:justify-between gap-[10px]">
             <div className="flex flex-col sm:flex-row gap-[10px]">
               <button
-                onClick={() => navigate('/search')}
+                onClick={() => navigate('/hotelsearch')}
                 className="flex-1 md:flex-none text-white py-[14px] px-[24px] bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
                 <BiPlus color="white" /> Add Another Field
               </button>
               <button
-                onClick={() => navigate('/search')}
+                onClick={() => navigate('/hotelsearch')}
                 className="flex-1 md:flex-none text-white py-[14px] px-[24px] bg-[#c7c7c7] rounded-[7px] flex justify-center items-center">
                 <BiX color="white" /> Clear All
               </button>
             </div>
             <button
-              onClick={() => navigate('/search')}
+              onClick={() => navigate('/hotelsearch')}
               className="flex-1 md:flex-none text-white py-[14px] px-[24px] bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
               <BiSearch color="white" /> Search
             </button>

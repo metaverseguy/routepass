@@ -2,8 +2,11 @@ import React from 'react';
 import { MdOutlineBookmark } from 'react-icons/md';
 import { AiOutlineExclamationCircle } from 'react-icons/ai';
 import { IoStarSharp } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
 
 const FlightCard = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white shadow px-4 py-[10px] sm:px-7 sm:py-4 md:px-10 md:py-[25px] rounded-[5px] sm:rounded-[10px] md:rounded-[15px]">
       <div className="flex justify-between items-center border-dashed">
@@ -39,7 +42,9 @@ const FlightCard = () => {
           </p>
         </div>
         <div>
-          <button className="bg-white text-[#292929] text-[6px] sm:text-[12px] md:text-[16px] 2xl:text-[1vw] max:text-[24px] font-semibold px-[10px] py-[6px] sm:px-[17px] sm:py-[10px] md:px-6 md:py-[14px] rounded-[4px] sm:rounded-[7px] md:rounded-[10px] border-[2px] border-[#292929]">
+          <button
+            onClick={() => navigate('/flightdetail')}
+            className="bg-white text-[#292929] text-[6px] sm:text-[12px] md:text-[16px] 2xl:text-[1vw] max:text-[24px] font-semibold px-[10px] py-[6px] sm:px-[17px] sm:py-[10px] md:px-6 md:py-[14px] rounded-[4px] sm:rounded-[7px] md:rounded-[10px] border-[2px] border-[#292929]">
             View Deal
           </button>
         </div>

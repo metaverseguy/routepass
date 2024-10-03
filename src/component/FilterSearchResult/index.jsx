@@ -4,13 +4,11 @@ import HotelCard from '../Cards/HotelCard';
 import FlightCard from '../Cards/FlightCard';
 import { GiSettingsKnobs } from 'react-icons/gi';
 import { Dropdown } from 'primereact/dropdown';
-import { FilterSearchBar } from '../../component/Bars/FilterSearchBar';
+import { FilterSearchBar } from '../Bars/FilterSearchBar';
 import { useState } from 'react';
 import { BiX } from 'react-icons/bi';
-import { useNavigate } from 'react-router-dom';
 
 export const FilterSearchResult = () => {
-  const navigate = useNavigate();
   const [flightTypeValue, setFlightTypeValue] = useState({
     name: 'Cheapest',
     code: 'cp',
@@ -193,9 +191,7 @@ export const FilterSearchResult = () => {
             <FlightCard />
             <FlightCard />
             <FlightCard />
-            <button
-              onClick={() => navigate('/detail')}
-              className="bg-[#1E1E1E] text-white py-[10px] sm:py-[11px] md:py-4 rounded-[10px] text-[8px] sm:text-sm md:text-[20px] font-semibold">
+            <button className="bg-[#1E1E1E] text-white py-[10px] sm:py-[11px] md:py-4 rounded-[10px] text-[8px] sm:text-sm md:text-[20px] font-semibold">
               Load More
             </button>
           </div>

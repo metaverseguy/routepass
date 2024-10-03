@@ -18,9 +18,9 @@ export default function HotelSearchOption() {
   ];
 
   return (
-    <div className="flex items-center bg-[#2B2B2B] justify-center">
-      <div className="max-w-[1440px] p-6 shadow-lg flex justify-center">
-        <div className="w-[90%] flex flex-col gap-y-5 sm:gap-y-10">
+    <div className="flex items-center w-full bg-[#2B2B2B] justify-center">
+      <div className="max-w-[1440px] w-full px-5 py-6 lg:px-14 lg-py-10 shadow-lg flex justify-center">
+        <div className="w-full flex flex-col gap-y-5 sm:gap-y-10">
           <div className="flex justify-center p-6 bg-[#1E1E1E] rounded-[9px]">
             <div className="flex flex-wrap items-center justify-center text-white rounded-lg w-4/5 gap-[5px]">
               <span className="font-semibold text-[10px] sm:text-[12px] flex items-center gap-[5px] text-nowrap">
@@ -123,8 +123,8 @@ export default function HotelSearchOption() {
               </div>
             </div>
 
-            <div className="flex flex-col 2xl:flex-row mb-5 gap-[10px]">
-              <div className="flex gap-[10px] 2xl:flex-row flex-col w-full items-stretch justify-center content-stretch">
+            <div className="flex flex-col lg:flex-row mb-5 gap-[10px]">
+              <div className="flex gap-[10px] lg:flex-row flex-col w-full items-stretch justify-center content-stretch">
                 <div className="flex flex-col md:flex-row gap-[10px] basis-2/5">
                   <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full flex flex-col gap-y-2">
                     <p className="text-xs 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
@@ -137,9 +137,20 @@ export default function HotelSearchOption() {
                       defaultValue="Select your destination or Name"
                     />
                   </div>
+                  <div className="border-black p-5 bg-gray-100 rounded-[7px] text-left w-full hidden md:flex lg:hidden flex-col gap-y-2">
+                    <p className="text-xs 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950] text-nowrap">
+                      Guests & Rooms
+                    </p>
+                    <input
+                      type="text"
+                      placeholder="From"
+                      className="text-xs 2xl:text-[0.9vw] max:text-[22px] bg-gray-100 text-[#292929] w-full focus:outline-none"
+                      defaultValue="2 Persons, 2 Rooms"
+                    />
+                  </div>
                 </div>
                 <div className="flex gap-[10px] flex-col md:flex-row w-full basis-3/5">
-                  <div className="flex gap-[10px] basis-2/3 w-full">
+                  <div className="flex gap-[10px] w-full lg:w-2/3">
                     <div className=" border-black p-5 bg-gray-100 rounded-[7px] basis-1/2 text-left w-full flex flex-col gap-y-2">
                       <p className="text-xs 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950]">
                         Check In
@@ -163,7 +174,7 @@ export default function HotelSearchOption() {
                       />
                     </div>
                   </div>
-                  <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left basis-1/3 w-full flex flex-col gap-y-2">
+                  <div className=" border-black p-5 bg-gray-100 rounded-[7px] text-left w-full md:w-1/3 flex md:hidden lg:flex flex-col gap-y-2">
                     <p className="text-xs 2xl:text-[0.9vw] max:text-[22px] text-left text-[#29292950] text-nowrap">
                       Guests & Rooms
                     </p>

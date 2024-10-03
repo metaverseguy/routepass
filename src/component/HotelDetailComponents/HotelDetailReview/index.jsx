@@ -1,4 +1,4 @@
-import { HotelReviewCard } from '../../../component/Cards/HotelReviewCard';
+import { HotelReviewCard } from '../../Cards/HotelReviewCard';
 
 export const HotelDetailReview = () => {
   return (

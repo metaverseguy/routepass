@@ -1,14 +1,14 @@
 import Navbar from '../../component/Bars/Navbar';
 import { DetailHeader } from '../../component/Bars/DetailHeader';
-import { FlightDetail } from '../../component/FlightDetail';
+import { FlightDetailContent } from '../../component/FlightDetailContent';
 import { Footer } from '../../component/Bars/Footer';
 
-export const Detail = () => {
+export const FlightDetail = () => {
   return (
     <div>
       <Navbar title="flights" />
       <DetailHeader />
-      <FlightDetail />
+      <FlightDetailContent />
       <Footer />
     </div>
   );

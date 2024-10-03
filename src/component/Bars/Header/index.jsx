@@ -13,7 +13,7 @@ const Header = ({ pageTitle }) => {
         src="assets/img/painting-3995999_1920.jpg"
         alt="No find the image"
       />
-      <div className="flex flex-col justify-center items-center max-w-[1800px]">
+      <div className="flex flex-col justify-center items-center max-w-[1400px] w-full">
         {pageTitle === 'main' ? <SearchBar /> : null}
         {pageTitle === 'hotel' ? <HotelSearchBar /> : null}
       </div>

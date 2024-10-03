@@ -8,10 +8,8 @@ import { Dropdown } from 'primereact/dropdown';
 import { HotelFilterSearchBar } from '../Bars/HotelFilterSearchBar';
 import { useState } from 'react';
 import { BiX } from 'react-icons/bi';
-import { useNavigate } from 'react-router-dom';
 
 export const HotelFilterSearchResult = () => {
-  const navigate = useNavigate();
   const [flightTypeValue, setFlightTypeValue] = useState({
     name: 'Cheapest',
     code: 'cp',
@@ -137,9 +135,7 @@ export const HotelFilterSearchResult = () => {
             <HotelSearchCard />
             <HotelSearchCard />
             <HotelSearchCard />
-            <button
-              onClick={() => navigate('/hoteldetail')}
-              className="bg-[#1E1E1E] text-white py-[10px] sm:py-[11px] md:py-4 rounded-[10px] text-[8px] sm:text-sm md:text-[20px] font-semibold">
+            <button className="bg-[#1E1E1E] text-white py-[10px] sm:py-[11px] md:py-4 rounded-[10px] text-[12px] sm:text-sm  md:text-[20px] font-semibold">
               Load More
             </button>
           </div>

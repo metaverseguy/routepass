@@ -4,9 +4,9 @@ import SearchFunc from '../../component/SearchFunc/searchFunc';
 import { FilterSearchResult } from '../../component/FilterSearchResult';
 import { Footer } from '../../component/Bars/Footer';
 
-export const Search = () => {
+export const FlightSearch = () => {
   return (
-    <div>
+    <div className="w-full">
       <Navbar title="flights" />
       <SearchFunc />
       <FilterSearchResult />

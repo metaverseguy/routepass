@@ -6,7 +6,7 @@ import { TbParkingCircleFilled } from 'react-icons/tb';
 export const HotelDetailFacilities = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="max-w-[1440px] w-full py-10 px-[60px] lg:px-[130px] flex flex-col gap-y-[60px] justify-center items-center bg-[#f8f8f8]">
+      <div className="max-w-[1440px] w-full py-10 px-5 md:px-[60px] lg:px-[130px] flex flex-col gap-y-[60px] justify-center items-center bg-[#f8f8f8]">
         <div className="flex flex-col justify-center max-w-[829px]">
           <p className="text-[28px] md:text-[44px] text-center font-semibold c-chromaphobicblack">
             Facilities
@@ -19,11 +19,11 @@ export const HotelDetailFacilities = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 w-full">
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <FaWifi size={30} />
-            <p className="text-[20px] c-chromaphobicblack">Free Wifi</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack">Free Wifi</p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <MdFreeBreakfast size={30} />
-            <p className="text-[20px] c-chromaphobicblack">Breakfast</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack">Breakfast</p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <svg
@@ -37,7 +37,9 @@ export const HotelDetailFacilities = () => {
                 fill="#1E1E1E"
               />
             </svg>
-            <p className="text-[20px] c-chromaphobicblack text-nowrap">Water Heater</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack text-nowrap">
+              Water Heater
+            </p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <svg
@@ -51,7 +53,7 @@ export const HotelDetailFacilities = () => {
                 fill="#1E1E1E"
               />
             </svg>
-            <p className="text-[20px] c-chromaphobicblack">Sea Views</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack">Sea Views</p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <svg
@@ -65,7 +67,7 @@ export const HotelDetailFacilities = () => {
                 fill="#1E1E1E"
               />
             </svg>
-            <p className="text-[20px] c-chromaphobicblack">Balcony</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack">Balcony</p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <svg
@@ -79,15 +81,19 @@ export const HotelDetailFacilities = () => {
                 fill="#1E1E1E"
               />
             </svg>
-            <p className="text-[20px] c-chromaphobicblack text-nowrap">Mini Kitchen</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack text-nowrap">
+              Mini Kitchen
+            </p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <FaShower size={30} />
-            <p className="text-[20px] c-chromaphobicblack">Shower</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack">Shower</p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <TbParkingCircleFilled size={30} />
-            <p className="text-[20px] c-chromaphobicblack text-nowrap">Free Parking</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack text-nowrap">
+              Free Parking
+            </p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <svg
@@ -101,7 +107,9 @@ export const HotelDetailFacilities = () => {
                 fill="#1E1E1E"
               />
             </svg>
-            <p className="text-[20px] c-chromaphobicblack text-nowrap">Living Room</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack text-nowrap">
+              Living Room
+            </p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <svg
@@ -115,7 +123,7 @@ export const HotelDetailFacilities = () => {
                 fill="#1E1E1E"
               />
             </svg>
-            <p className="text-[20px] c-chromaphobicblack">Pet Allowed</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack">Pet Allowed</p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <svg
@@ -138,7 +146,7 @@ export const HotelDetailFacilities = () => {
                 stroke="#1E1E1E"
               />
             </svg>
-            <p className="text-[20px] c-chromaphobicblack">AC</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack">AC</p>
           </div>
           <div className="w-full flex flex-col gap-y-[15px] items-center justify-center py-6 bg-white shadow rounded-[17px]">
             <svg
@@ -152,7 +160,7 @@ export const HotelDetailFacilities = () => {
                 fill="#1E1E1E"
               />
             </svg>
-            <p className="text-[20px] c-chromaphobicblack">24 Hours</p>
+            <p className="text-[16px] md:text-[20px] c-chromaphobicblack">24 Hours</p>
           </div>
         </div>
       </div>

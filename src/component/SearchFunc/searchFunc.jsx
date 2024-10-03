@@ -28,8 +28,8 @@ export default function searchFunc() {
 
   return (
     <div className="flex justify-center items-center bg-[#2B2B2B]">
-      <div className="max-w-[1440px] p-6 shadow-lg flex justify-center">
-        <div className="w-[90%] flex flex-col gap-y-5 sm:gap-y-10">
+      <div className="max-w-[1440px] w-full px-5 py-6 lg:px-14 lg-py-10 shadow-lg flex justify-center">
+        <div className="flex flex-col gap-y-5 sm:gap-y-10 w-full">
           <div className="flex justify-center p-6 bg-[#1E1E1E] rounded-[9px]">
             <div className="flex flex-wrap items-center justify-center text-white rounded-lg w-4/5 gap-[5px]">
               <span className="font-semibold text-[10px] sm:text-[12px] 2xl:text-[0.8vw] max:text-[20px] flex items-center gap-[5px] text-nowrap">
@@ -241,7 +241,7 @@ export default function searchFunc() {
                 </div>
               </div>
               <button
-                onClick={() => navigate('/search')}
+                onClick={() => navigate('/flgihtsearch')}
                 className="flex-1 text-white 2xl:text-[0.9vw] max:text-[22px] md:py-5 py-4 px-5 bg-[#1E1E1E] rounded-[7px] flex justify-center items-center">
                 <BiSearch color="white" /> Search
               </button>

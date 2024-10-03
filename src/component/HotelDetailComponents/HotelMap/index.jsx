@@ -1,4 +1,4 @@
-import { GoogleMap } from '../../../component/GoogleMap';
+import { GoogleMap } from '../../GoogleMap';
 import { APIProvider } from '@vis.gl/react-google-maps';
 
 export const HotelMap = () => {
