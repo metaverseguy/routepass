@@ -1,4 +1,3 @@
-// App
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Flight from './pages/Flight/index.jsx';
